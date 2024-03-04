@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Arista-Pro-Bold-trial';
+    src: url('/fonts/Arista-Pro-Bold-trial.woff2') format('woff2'), /* Specify correct paths */
+         url('/fonts/Arista-Pro-Bold-trial.woff') format('woff');
+    /* Add other font formats if available */
+    font-weight: bold;
+    font-style: normal;
+}
+.some-class {
+    font-family: 'Arista-Pro-Bold-trial', sans-serif;
+}

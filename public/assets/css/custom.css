@@ -1,0 +1,25 @@
+.alpha{
+    color: white;
+    background-color: #12498C
+  }
+ .beta{
+    color: black;
+    background-color: rgba(122, 154, 194, 0.2)
+ }
+ .gamma{
+    color: white;
+    background-color: rgba(122, 154, 194, 0.8)
+ }
+    .default_h{
+    min-height: 50vh;
+}
+@font-face {
+    font-family: 'NamaFont';
+    src: url('/fonts/font.woff2') format('woff2'),
+         url('/fonts/font.woff') format('woff');
+    /* tambahkan format font yang mendukung jika ada */
+}
+
+body {
+    font-family: 'NamaFont', sans-serif;
+}
