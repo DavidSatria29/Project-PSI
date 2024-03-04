@@ -98,26 +98,26 @@
     {{-- Sejarah --}}
     <div class="section beta default_h">
       <div class="container pt-4 pb-4">
-        <div class="row">
+        <div class="row align-items-center"> <!-- Added align-items-center class here -->
           <h1 class="text-center"><b>SEJARAH</b></h1>
-          <div class="col-4" style="justify-content: center">
+          <div class="col-4">
             <img src="images/keramik2.png" class="rounded mx-auto d-block" alt="...">
           </div>
-          <div class="col-6" style="">
+          <div class="col-6"> <!-- Added d-flex and align-items-center classes here -->
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis turpis id justo pretium, id bibendum ipsum lobortis. Donec vel hendrerit ante. Integer id justo ut est porta sollicitudin. Proin ac velit nec magna lacinia ultrices. Vivamus eleifend urna ut odio molestie, eget dictum odio feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vitae purus vitae risus gravida malesuada nec sit amet odio. Sed eleifend luctus justo, vel malesuada lacus aliquet eu. Vivamus non ex eu nisi interdum bibendum. Curabitur vel diam nec justo convallis facilisis. Suspendisse potenti. Vivamus maximus, felis vel tristique consequat, libero libero suscipit purus, eget pharetra risus nunc eu velit. Curabitur tincidunt efficitur purus, eget bibendum lacus sodales non. Vivamus ut semper leo. Sed id eros arcu.</p>
           </div>
         </div>
       </div>
     </div>
 
+
     {{-- Lokasi dan Jam Operasional --}}
     <div class="section beta default_h">
       <div class="container pt-4 pb-4">
-        <div class="row">
+        <div class="row align-items-center">
           <h1 class="text-center"><b>Lokasi dan Jam Operasional</b></h1>
           <div class="col ">
-            <h5 class="text-center align-middle">SENIN - MINGGU
-              08.00 - 15.00</h5>
+            <h3 class="text-center align-middle">SENIN - MINGGU <br>08.00 - 15.00</h3>
           </div>
           <div class="col align-middle">
             <img src="images/peta.png" class="rounded mx-auto d-block" alt="..." style="max-height: 500px; max-width: 500px">
