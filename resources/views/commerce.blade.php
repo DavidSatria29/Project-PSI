@@ -8,7 +8,7 @@
     <link rel="stylesheet" href={{url("assets/css/custom.css")  }}>
     <link rel="stylesheet" href={{url("fonts/fonts.css")  }}>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>main</title>
+    <title>E-commerce</title>
 
 </head>
 
@@ -95,103 +95,45 @@
       </div>
     </div>
 
-    {{-- Sejarah --}}
+    {{-- Produk --}}
     <div class="section beta default_h">
       <div class="container pt-4 pb-4">
         <div class="row align-items-center"> <!-- Added align-items-center class here -->
-          <h1 class="text-center"><b>SEJARAH</b></h1>
-          <div class="col-4">
-            <img src="images/keramik2.png" class="rounded mx-auto d-block" alt="...">
-          </div>
-          <div class="col-6"> <!-- Added d-flex and align-items-center classes here -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis turpis id justo pretium, id bibendum ipsum lobortis. Donec vel hendrerit ante. Integer id justo ut est porta sollicitudin. Proin ac velit nec magna lacinia ultrices. Vivamus eleifend urna ut odio molestie, eget dictum odio feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vitae purus vitae risus gravida malesuada nec sit amet odio. Sed eleifend luctus justo, vel malesuada lacus aliquet eu. Vivamus non ex eu nisi interdum bibendum. Curabitur vel diam nec justo convallis facilisis. Suspendisse potenti. Vivamus maximus, felis vel tristique consequat, libero libero suscipit purus, eget pharetra risus nunc eu velit. Curabitur tincidunt efficitur purus, eget bibendum lacus sodales non. Vivamus ut semper leo. Sed id eros arcu.</p>
-          </div>
+          <h1 class="text-center"><b>Produk</b></h1>
         </div>
+        <div class="row align-items-center pt-5"> <!-- Added align-items-center class here -->
+            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-whiskey-glass fa-5x"></i><br>Gelas</button>
+                <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-seedling fa-5x"></i><br>Vas</button>
+                <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-utensils fa-5x"></i><br>Alat Makan</button>
+                <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-palette fa-5x"></i><br>Custom</button>
+                <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-hat-wizard fa-5x"></i><br>Hiasan</button>
+              </div>
+        </div>
+
       </div>
     </div>
 
-
-    {{-- Lokasi dan Jam Operasional --}}
-    <div class="section beta default_h">
-      <div class="container pt-4 pb-4">
-        <div class="row align-items-center">
-          <h1 class="text-center"><b>Lokasi dan Jam Operasional</b></h1>
-          <div class="col ">
-            <h3 class="text-center align-middle">SENIN - MINGGU <br>08.00 - 15.00</h3>
-          </div>
-          <div class="col align-middle">
-            <img src="images/peta.png" class="rounded mx-auto d-block" alt="..." style="max-height: 500px; max-width: 500px">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {{-- Fasilitas --}}
-    <div class="section gamma default_h">
-      <div class="container py-4">
-        <div class="row">
-          <h1 class="text-center">Fasilitas</h1>
-          <div class="col">
-            <div class="row">
-              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
-            </div>
-            <div class="row">
-              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
-            </div>
-          </div>
-          <div class="col">
-            <div class="row">
-              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
-            </div>
-            <div class="row">
-              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
-            </div>
-          </div>
-          <div class="col">
-            <div class="row">
-              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
-            </div>
-            <div class="row">
-              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      {{-- review --}}
+      {{-- Metode Pembayaran --}}
     <div class="section beta default_h">
       <div class="container py-4">
         <div class="row">
-          <h1 class="text-center"><b>REVIEW</b></h1>
-          <div class="col d-flex" style="justify-content: center">
-            <div class="card" style="width: 18rem;">
-              <img src="images/card1.png" class="card-img-top p-3" alt="...">
-              <div class="card-body">
-                <h4 class="card-title text-center">Lorem ipsum</h4>
-                <h5 class="card-text text-center">-Lisa-</h5>
-                <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis turpis id justo pretium, id bibendum ipsum lobortis. Donec vel hendrerit ante. Integer id justo ut est porta sollicitudin.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex" style="justify-content: center">
-            <div class="card" style="width: 18rem;">
-              <img src="images/card2.png" class="card-img-top p-3" alt="...">
-              <div class="card-body">
-                <h4 class="card-title text-center">Lorem ipsum</h4>
-                <h5 class="card-text text-center">-Celine-</h5>
-                <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis turpis id justo pretium, id bibendum ipsum lobortis. Donec vel hendrerit ante. Integer id justo ut est porta sollicitudin.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex" style="justify-content: center">
-            <div class="card" style="width: 18rem;">
-              <img src="images/card3.png" class="card-img-top p-3" alt="...">
-              <div class="card-body">
-                <h4 class="card-title text-center">Lorem ipsum</h4>
-                <h5 class="card-text text-center">-Tiffany-</h5>
-                <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis turpis id justo pretium, id bibendum ipsum lobortis. Donec vel hendrerit ante. Integer id justo ut est porta sollicitudin.</p>
-              </div>
+          <h1 class="text-center"><b>Metode Pembayaran</b></h1>         
+          <div class="card">
+            <div class="card-body">
+                <div class="form-check py-1">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Bank
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Cash on Delivery
+                    </label>
+                  </div>
+              <a href="#" class="btn btn-primary py-2">Done</a>
             </div>
           </div>
         </div>

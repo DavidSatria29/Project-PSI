@@ -33,7 +33,7 @@
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="{{ url('/commerce') }}">go to page</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -44,7 +44,7 @@
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="{{ url('/pariwisata') }}">go to page</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -95,101 +95,37 @@
       </div>
     </div>
 
-    {{-- Sejarah --}}
-    <div class="section beta default_h">
-      <div class="container pt-4 pb-4">
-        <div class="row align-items-center"> <!-- Added align-items-center class here -->
-          <h1 class="text-center"><b>SEJARAH</b></h1>
-          <div class="col-4">
-            <img src="images/keramik2.png" class="rounded mx-auto d-block" alt="...">
-          </div>
-          <div class="col-6"> <!-- Added d-flex and align-items-center classes here -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis turpis id justo pretium, id bibendum ipsum lobortis. Donec vel hendrerit ante. Integer id justo ut est porta sollicitudin. Proin ac velit nec magna lacinia ultrices. Vivamus eleifend urna ut odio molestie, eget dictum odio feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vitae purus vitae risus gravida malesuada nec sit amet odio. Sed eleifend luctus justo, vel malesuada lacus aliquet eu. Vivamus non ex eu nisi interdum bibendum. Curabitur vel diam nec justo convallis facilisis. Suspendisse potenti. Vivamus maximus, felis vel tristique consequat, libero libero suscipit purus, eget pharetra risus nunc eu velit. Curabitur tincidunt efficitur purus, eget bibendum lacus sodales non. Vivamus ut semper leo. Sed id eros arcu.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    {{-- Lokasi dan Jam Operasional --}}
-    <div class="section beta default_h">
-      <div class="container pt-4 pb-4">
-        <div class="row align-items-center">
-          <h1 class="text-center"><b>Lokasi dan Jam Operasional</b></h1>
-          <div class="col ">
-            <h3 class="text-center align-middle">SENIN - MINGGU <br>08.00 - 15.00</h3>
-          </div>
-          <div class="col align-middle">
-            <img src="images/peta.png" class="rounded mx-auto d-block" alt="..." style="max-height: 500px; max-width: 500px">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {{-- Fasilitas --}}
-    <div class="section gamma default_h">
-      <div class="container py-4">
-        <div class="row">
-          <h1 class="text-center">Fasilitas</h1>
-          <div class="col">
-            <div class="row">
-              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
-            </div>
-            <div class="row">
-              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
-            </div>
-          </div>
-          <div class="col">
-            <div class="row">
-              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
-            </div>
-            <div class="row">
-              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
-            </div>
-          </div>
-          <div class="col">
-            <div class="row">
-              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
-            </div>
-            <div class="row">
-              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      {{-- review --}}
+      {{-- Paket Wisata --}}
     <div class="section beta default_h">
       <div class="container py-4">
         <div class="row">
-          <h1 class="text-center"><b>REVIEW</b></h1>
+          <h1 class="text-center"><b>Paket Wisata</b></h1>
           <div class="col d-flex" style="justify-content: center">
             <div class="card" style="width: 18rem;">
-              <img src="images/card1.png" class="card-img-top p-3" alt="...">
+              <img src="images/paket1.png" class="card-img-top p-3" alt="...">
               <div class="card-body">
-                <h4 class="card-title text-center">Lorem ipsum</h4>
-                <h5 class="card-text text-center">-Lisa-</h5>
+                <h4 class="card-title text-center">Wisata 1</h4>
+                <h5 class="card-text text-center" style="color: red">Rp.200,000</h5>
                 <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis turpis id justo pretium, id bibendum ipsum lobortis. Donec vel hendrerit ante. Integer id justo ut est porta sollicitudin.</p>
               </div>
             </div>
           </div>
           <div class="col d-flex" style="justify-content: center">
             <div class="card" style="width: 18rem;">
-              <img src="images/card2.png" class="card-img-top p-3" alt="...">
+              <img src="images/paket2.png" class="card-img-top p-3" alt="...">
               <div class="card-body">
-                <h4 class="card-title text-center">Lorem ipsum</h4>
-                <h5 class="card-text text-center">-Celine-</h5>
+                <h4 class="card-title text-center">Wisata 2</h4>
+                <h5 class="card-text text-center" style="color: red">Rp.300,000</h5>
                 <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis turpis id justo pretium, id bibendum ipsum lobortis. Donec vel hendrerit ante. Integer id justo ut est porta sollicitudin.</p>
               </div>
             </div>
           </div>
           <div class="col d-flex" style="justify-content: center">
             <div class="card" style="width: 18rem;">
-              <img src="images/card3.png" class="card-img-top p-3" alt="...">
+              <img src="images/paket3.png" class="card-img-top p-3" alt="...">
               <div class="card-body">
-                <h4 class="card-title text-center">Lorem ipsum</h4>
-                <h5 class="card-text text-center">-Tiffany-</h5>
+                <h4 class="card-title text-center">Wisata 3</h4>
+                <h5 class="card-text text-center" style="color: red">Rp.400,000</h5>
                 <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis turpis id justo pretium, id bibendum ipsum lobortis. Donec vel hendrerit ante. Integer id justo ut est porta sollicitudin.</p>
               </div>
             </div>
