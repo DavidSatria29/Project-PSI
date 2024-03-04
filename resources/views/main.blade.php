@@ -74,7 +74,7 @@
         <div class="row">
           <div class="col">
             <div class="row">
-              <h1>Kampung Wisata <br> Keramik Dinoyo</h1>
+              <h1><b>Kampung Wisata <br> Keramik Dinoyo</b></h1>
             </div>
             <div class="row">
               <h3>Kampung Wisata Keramik Dinoyo merupakan destinasi wisata yang berada di Kota Malang.</h3>
@@ -97,14 +97,14 @@
 
     {{-- Sejarah --}}
     <div class="section beta default_h">
-      <div class="container">
+      <div class="container pt-4 pb-4">
         <div class="row">
-          <h1 class="">Sejarah</h1>
-          <div class="col-4">
-            <img src="..." class="rounded mx-auto d-block" alt="...">
+          <h1 class="text-center"><b>SEJARAH</b></h1>
+          <div class="col-4" style="justify-content: center">
+            <img src="images/keramik2.png" class="rounded mx-auto d-block" alt="...">
           </div>
-          <div class="col-6">
-            <p>Lorem ipsum</p>
+          <div class="col-6" style="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis turpis id justo pretium, id bibendum ipsum lobortis. Donec vel hendrerit ante. Integer id justo ut est porta sollicitudin. Proin ac velit nec magna lacinia ultrices. Vivamus eleifend urna ut odio molestie, eget dictum odio feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vitae purus vitae risus gravida malesuada nec sit amet odio. Sed eleifend luctus justo, vel malesuada lacus aliquet eu. Vivamus non ex eu nisi interdum bibendum. Curabitur vel diam nec justo convallis facilisis. Suspendisse potenti. Vivamus maximus, felis vel tristique consequat, libero libero suscipit purus, eget pharetra risus nunc eu velit. Curabitur tincidunt efficitur purus, eget bibendum lacus sodales non. Vivamus ut semper leo. Sed id eros arcu.</p>
           </div>
         </div>
       </div>
@@ -112,15 +112,15 @@
 
     {{-- Lokasi dan Jam Operasional --}}
     <div class="section beta default_h">
-      <div class="container">
+      <div class="container pt-4 pb-4">
         <div class="row">
-          <h1>Lokasi dan Jam Operasional</h1>
-          <div class="col">
-            <h1>SENIN - MINGGU
-              08.00 - 15.00</h1>
+          <h1 class="text-center"><b>Lokasi dan Jam Operasional</b></h1>
+          <div class="col ">
+            <h5 class="text-center align-middle">SENIN - MINGGU
+              08.00 - 15.00</h5>
           </div>
-          <div class="col">
-            <img src="..." class="rounded mx-auto d-block" alt="...">
+          <div class="col align-middle">
+            <img src="images/peta.png" class="rounded mx-auto d-block" alt="..." style="max-height: 500px; max-width: 500px">
           </div>
         </div>
       </div>
@@ -130,7 +130,7 @@
     <div class="section gamma default_h">
       <div class="container">
         <div class="row">
-          <h1>Fasilitas</h1>
+          <h1 class="text-center">Fasilitas</h1>
           <div class="col">
             <div class="row">
               <img src="..." class="rounded mx-auto d-block" alt="...">
@@ -161,11 +161,11 @@
 
       {{-- review --}}
     <div class="section beta default_h">
-      <div class="container">
+      <div class="container py-4">
         <div class="row">
           <div class="col">
             <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
+              <img src="images/card1.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -175,7 +175,7 @@
           </div>
           <div class="col">
             <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
+              <img src="images/card2.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -185,7 +185,7 @@
           </div>
           <div class="col">
             <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
+              <img src="images/card3.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -198,20 +198,24 @@
     </div>
     {{-- border card --}}
     <div class="section alpha default_h">
-      <div class="container">
+      <div class="container pt-5">
         <div class="row">
           <div class="col">
             <div class="row">
-              <img src="..." class="card-img-top" alt="...">
+              <img src="images/logo.png" class="card-img-top" alt="..." style="width: 150px; height: 150px">
             </div>
             <div class="row">
-              <h5>lorem ipsum</h5>
+              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
             </div>
-            <div class="row"></div>
+            <div class="row">
+              <div class="col-2"><i class="fa-brands fa-x-twitter"></i></div>
+              <div class="col-2"><i class="fa-brands fa-instagram"></i></div>
+              <div class="col-2"><i class="fa-brands fa-facebook"></i></div>
+            </div>
           </div>
           <div class="col">
             <div class="row">
-              <h5>Company</h5>
+              <h4><b>Company</b></h4>
             </div>
             <div class="row">
               <p>Sejarah</p>
@@ -228,7 +232,7 @@
           </div>
           <div class="col">
             <div class="row">
-              <h5>Resource</h5>
+              <h4><b>Resource</b></h4>
             </div>
             <div class="row">
               <p>Produk Keramik</p>
@@ -245,36 +249,39 @@
           </div>
           <div class="col">
             <div class="row">
-              <h5>Newslatter</h5>
+              <h4><b>Newslatter</b></h4>
             </div>
-            <div class="row"></div>
-            <div class="row"></div>
+            <div class="row">
+              <input class="form-control me-2" type="search" placeholder="enter your email address" aria-label="enter your email address">
+            </div>
+            <div class="row pt-2">
+              <button type="button" class="btn btn-outline-light">Send</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
 {{-- footer --}}
     <div class="section alpha">
-      <div class="container-fluid">
+      <div class="container-fluid px-5">
         <div class="row">
-          <div class="col">
-            <p>About us</p>
+          <div class="col-1">
+            <p class="text-center">About us</p>
+          </div>
+          <div class="col-1">
+            <p class="text-center">Contact</p>
+          </div>
+          <div class="col-1">
+            <p class="text-center">Privacy Policy</p>
+          </div>
+          <div class="col-1">
+            <p class="text-center">Sitemap</p>
+          </div>
+          <div class="col-1">
+            <p class="text-center">Terms of Use</p>
           </div>
           <div class="col">
-            <p>Contact</p>
-          </div>
-          <div class="col">
-            <p>Privacy Policy</p>
-          </div>
-          <div class="col">
-            <p>Sitemap</p>
-          </div>
-          <div class="col">
-            <p>Terms of Use</p>
-          </div>
-          <div class="col"></div>
-          <div class="col">
-            <p>© 2024, All Rights Reserved</p>
+            <p class="text-end">© 2024, All Rights Reserved</p>
           </div>
         </div>
       </div>
