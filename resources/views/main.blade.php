@@ -128,31 +128,31 @@
 
     {{-- Fasilitas --}}
     <div class="section gamma default_h">
-      <div class="container">
+      <div class="container py-4">
         <div class="row">
           <h1 class="text-center">Fasilitas</h1>
           <div class="col">
             <div class="row">
-              <img src="..." class="rounded mx-auto d-block" alt="...">
+              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
             </div>
             <div class="row">
-              <img src="..." class="rounded mx-auto d-block" alt="...">
-            </div>
-          </div>
-          <div class="col">
-            <div class="row">
-              <img src="..." class="rounded mx-auto d-block" alt="...">
-            </div>
-            <div class="row">
-              <img src="..." class="rounded mx-auto d-block" alt="...">
+              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
             </div>
           </div>
           <div class="col">
             <div class="row">
-              <img src="..." class="rounded mx-auto d-block" alt="...">
+              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
             </div>
             <div class="row">
-              <img src="..." class="rounded mx-auto d-block" alt="...">
+              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
+            </div>
+            <div class="row">
+              <img src="images/dummy.png" class="rounded mx-auto d-block py-1" alt="..." style="width: 300px; height: 300px">
             </div>
           </div>
         </div>
@@ -163,6 +163,7 @@
     <div class="section beta default_h">
       <div class="container py-4">
         <div class="row">
+          <h1 class="text-center"><b>REVIEW</b></h1>
           <div class="col">
             <div class="card" style="width: 18rem;">
               <img src="images/card1.png" class="card-img-top" alt="...">
