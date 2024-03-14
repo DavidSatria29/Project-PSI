@@ -21,10 +21,15 @@ class CategoryController extends Controller
     }
     public function store(Request $request)
     {
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'description' => 'nullable|string',
-        ]);
+        $request->validate(
+            [
+                'name' => 'required|string|max:255',
+                'description' => 'nullable|string',
+            ],
+            [
+                'name.required' => 'tidak boleh kosong',
+            ]
+        );
 
         // Membuat kategori baru
         Category::create([
@@ -49,7 +54,9 @@ class CategoryController extends Controller
                 'name' => 'required|string|max:255',
                 'description' => 'nullable|string',
             ],
-
+            [
+                'name.required' => 'tidak boleh kosong',
+            ]
         );
         $category = Category::findOrFail($id);
         $category->update([

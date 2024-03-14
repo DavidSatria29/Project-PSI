@@ -43,7 +43,6 @@
     />
 
     {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"> --}}
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.bootstrap5.css">
     <!-- Icons. Uncomment required icon fonts -->
     <link rel="stylesheet" href="{{ asset('../assets/admin/vendor/fonts/boxicons.css') }}" />
 
@@ -178,30 +177,35 @@
               </a>
             </li>
             <li class="menu-item @yield('cart')">
-              <a href="javascript:void(0);" class="menu-link">
+              <a href="{{ route('admin.cart.show') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-cart"></i>
                 <div data-i18n="Cart">Cart</div>
               </a>
             </li>
             <li class="menu-item @yield('order')">
-              <a href="javascript:void(0);" class="menu-link">
+              <a href="{{ route('admin.order.show') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-receipt"></i>
                 <div data-i18n="Order">Order</div>
               </a>
             </li>
             <li class="menu-item @yield('reservation')">
-              <a href="javascript:void(0);" class="menu-link">
+              <a href="{{ route('admin.reservation.show') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-notepad"></i>
                 <div data-i18n="Reservation">Reservation</div>
               </a>
             </li>
             <li class="menu-item @yield('review')">
-              <a href="javascript:void(0);" class="menu-link">
+              <a href="{{ route('admin.review.show') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-star"></i>
                 <div data-i18n="Review">Review</div>
               </a>
             </li>
-
+            <li class="menu-item @yield('contact')">
+              <a href="{{ route('admin.contact.show') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-contact"></i>
+                <div data-i18n="Contact">Contact</div>
+              </a>
+            </li>
           </ul>
         </aside>
         <!-- / Menu -->
@@ -368,8 +372,16 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
     <script>
-            new DataTable('#example');
             new DataTable('#user-table');
+            new DataTable('#category-table');
+            new DataTable('#product-table');
+            new DataTable('#custom_product-table');
+            new DataTable('#cart-table');
+            new DataTable('#order-table');
+            new DataTable('#reservation-table');
+            new DataTable('#review-table');
+            new DataTable('#contact-table');
+
     </script>
     @include('sweetalert::alert')
   </body>

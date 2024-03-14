@@ -1,4 +1,4 @@
-@extends('layouts.adminMaster')
+@extends('layouts.craftmanMaster')
 @section('title', 'Custom-Product-Dashboard')
 @section('custom_product', 'active')
 @section('content')
@@ -30,8 +30,8 @@
                             <td>{{ $custom_product->amount }}</td>
                             <td>{{ $custom_product->description }}</td>
                             <td><img src="{{ $custom_product->image }}" alt="Product Image" style="max-width: 100px;"></td>
-                            <td><a href="{{ route('admin.custom_product.edit', ['custom_product'=>$custom_product->id]) }}" class="btn btn-success rounded-pill px-3"><i class="bx bx-edit-alt"></i></a></td>
-                            <td><a href="{{ route('admin.custom_product.delete', ['custom_product'=>$custom_product->id])}}" class="btn btn-danger rounded-pill px-3"><i class="bx bxs-eraser"></i></a></td>
+                            <td><a href="{{ route('craftman.custom_product.edit', ['custom_product'=>$custom_product->id]) }}" class="btn btn-success rounded-pill px-3"><i class="bx bx-edit-alt"></i></a></td>
+                            <td><a href="{{ route('craftman.custom_product.delete', ['custom_product'=>$custom_product->id])}}" class="btn btn-danger rounded-pill px-3"><i class="bx bxs-eraser"></i></a></td>
                         </tr>
                         @empty
                         <tr>

@@ -22,6 +22,10 @@
                         <input type="password" class="form-control" id="password" name="password" value="{{ old('password') }}">
                     </div>
                     <div class="mb-3">
+                        <label for="alias" class="form-label">Alias</label>
+                        <input type="text" class="form-control" id="alias" name="alias" value="{{ old('alias') }}">
+                    </div>
+                    <div class="mb-3">
                         <label for="role" class="form-label">Role</label>
                         <input type="text" class="form-control" id="role" name="role" value="{{ old('role') }}">
                     </div>

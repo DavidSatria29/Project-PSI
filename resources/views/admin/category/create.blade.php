@@ -1,6 +1,6 @@
 @extends('layouts.adminMaster')
 @section('title', 'categories-Dashboard')
-@section('CustomProduct', 'active')
+@section('category', 'active')
 @section('content')
 <div class="container-fluid pt-4 px-4 container-user">
     <div class="row g-4">

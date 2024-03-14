@@ -15,12 +15,11 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained('users');
             $table->string('product_id', 8)->nullable();
-            $table->string('custom_product_id', 8)->nullable();
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
-            $table->foreign('custom_product_id')->references('id')->on('custom_products')->onDelete('cascade');
+            $table->foreignId('custom_product_id')->constrained('custom_products')->onDelete('cascade');
             $table->string('name');
             $table->string('product_name');
-            $table->integer('rating')->max(10);
+            $table->decimal('rating', 2, 1);
             $table->text('comment');
             $table->timestamps();
         });

@@ -20,6 +20,7 @@ return new class extends Migration
             $table->enum('status', ['pending_payment', 'completed', 'shipped', 'delivered', 'canceled'])->default('pending_payment');
             $table->enum('payment_method', ['BCA', 'BRI', 'OVO', 'GOPAY', 'DANA', 'ShopeePay', 'COD']);
             $table->string('product_details');
+            $table->string('amount_details');
             $table->timestamp('order_at')->useCurrent();
             $table->timestamps();
         });

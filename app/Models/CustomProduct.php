@@ -9,13 +9,12 @@ class CustomProduct extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'id',
         'name',
         'amount',
         'description',
         'image',
-        'category_id',
-        'user_id',
-
+        'status'
     ];
 
 

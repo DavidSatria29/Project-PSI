@@ -17,40 +17,39 @@ class CustomProductController extends Controller
         return view('admin.custom_product.read', compact('customProducts'));
     }
 
-    public function create()
-    {
-        $categories = Category::all();
-        $users = User::all();
-        return view('admin.custom_product.create', compact('categories', 'users'));
-    }
+    // public function create()
+    // {
+    //     $categories = Category::all();
+    //     $users = User::all();
+    //     return view('admin.custom_product.create', compact('categories', 'users'));
+    // }
 
-    public function store(Request $request)
-    {
-        $request->validate([
+    // public function store(Request $request)
+    // {
+    //     $request->validate([
+    //         'name' => 'required|string|max:255',
+    //         'amount' => 'required|string',
+    //         'description' => 'required|string',
+    //         'image' => 'required|string',
+    //         'category_id' => 'required|exists:categories,id',
+    //         'user_id' => 'required|exists:users,id',
+    //     ]);
 
-            'name' => 'required|string|max:255',
-            'amount' => 'required|string',
-            'description' => 'required|string',
-            'image' => 'required|string',
-            'category_id' => 'required|exists:categories,id',
-            'user_id' => 'required|exists:users,id',
-        ]);
 
+    //     // Membuat produk baru dengan menetapkan nilai id secara manual
+    //     CustomProduct::create([
 
-        // Membuat produk baru dengan menetapkan nilai id secara manual
-        CustomProduct::create([
+    //         'name' => $request->name,
+    //         'amount' => $request->amount,
+    //         'description' => $request->description,
+    //         'image' => $request->image,
+    //         'category_id' => $request->category_id,
+    //         'user_id' => $request->user_id,
+    //     ]);
 
-            'name' => $request->name,
-            'amount' => $request->amount,
-            'description' => $request->description,
-            'image' => $request->image,
-            'category_id' => $request->category_id,
-            'user_id' => $request->user_id,
-        ]);
-
-        // Mengembalikan redirect dengan pesan sukses jika berhasil
-        return redirect()->route('admin.custom_product.show')->with('success', 'Data berhasil ditambahkan');
-    }
+    //     // Mengembalikan redirect dengan pesan sukses jika berhasil
+    //     return redirect()->route('admin.custom_product.show')->with('success', 'Data berhasil ditambahkan');
+    // }
 
 
     public function edit($id)
@@ -60,28 +59,21 @@ class CustomProductController extends Controller
     }
     public function update(Request $request, $id)
     {
-        $request->validate([
-
-            'name' => 'required|string|max:255',
-            'amount' => 'required|string',
-            'description' => 'required|string',
-            'image' => 'required|string',
-            'category_id' => 'required|exists:categories,id',
-            'user_id' => 'required|exists:users,id',
-
-        ]);
+        $request->validate(
+            [
+                'status' => 'required|string|max:255',
+            ],
+            [
+                'status.required' => 'Status harus diisi',
+            ]
+        );
 
         // Mengambil produk yang ingin diubah
         $custom_product = CustomProduct::findOrFail($id);
 
         // Melakukan update data produk
         $custom_product->update([
-            'name' => $request->name,
-            'amount' => $request->amount,
-            'description' => $request->description,
-            'image' => $request->image,
-            'category_id' => $request->category_id,
-            'user_id' => $request->user_id,
+            'status' => $request->status,
         ]);
 
         return redirect()->route('admin.custom_product.show')->with('success', 'Data berhasil diubah');

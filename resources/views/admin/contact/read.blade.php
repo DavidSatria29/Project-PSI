@@ -1,31 +1,31 @@
 @extends('layouts.adminMaster')
-@section('title', 'Review-Dashboard')
-@section('review', 'active')
+@section('title', 'Contact-Dashboard')
+@section('contact', 'active')
 @section('content')
 <div class="container-fluid px-5 container-user">
     <div class="col-12 mt-1">
         <div class="rounded h-100 p-4">
             <div class="table-responsive">
-                <table id=@if($reviews->count() > 0) "review-table" @else "empty-table"  @endif class="table table-bordered text-center">
+                <table id=@if($contacts->count() > 0)"contact-table" @else "empty-table"  @endif class="table table-bordered text-center">
                     <thead>
                         <tr>
                             <th>NO</th>
-                            <th>Product Name</th>
-                            <th>Rating</th>
-                            <th>Comment</th>
-                            <th>Status</th>
+                            <th>Nama</th>
+                            <th>Email</th>
+                            <th>Subject</th>
+                            <th>Message</th>
                             <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @forelse ($reviews as $review)
+                        @forelse ($contacts as $contact)
                         <tr>
                             <td>{{ $loop->iteration }}</td>
-                            <td>{{ $review->product_name }}</td>
-                            <td>{{ $review->rating }}</td>
-                            <td>{{ $review->comment }}</td>
-                            <td>{{ $review->status }}</td>
-                            <td><a href="{{ route('admin.review.delete', ['review'=>$review->id])}}" class="btn btn-danger rounded-pill px-3"><i class="bx bxs-eraser"></i></a></td>
+                            <td>{{ $contact->name }}</td>
+                            <td>{{ $contact->email }}</td>
+                            <td>{{ $contact->subject }}</td>
+                            <td>{{ $contact->message }}</td>
+                            <td><a href="{{ route('admin.contact.delete', ['contact'=>$contact->id])}}" class="btn btn-danger rounded-pill px-3"><i class="bx bx-eraser"></i></a></td>
                         </tr>
                         @empty
                         <tr>

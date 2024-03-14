@@ -1,4 +1,4 @@
-@extends('layouts.adminMaster')
+@extends('layouts.craftmanMaster')
 @section('title', 'products-Dashboard')
 @section('product', 'active')
 @section('content')
@@ -7,7 +7,7 @@
         <div class="col-sm-12">
             <div class="rounded h-100 p-4">
                 <h6 class="mb-4">Create Form Product</h6>
-                <form action="{{ route('admin.product.store') }}" enctype="multipart/form-data" method="POST">
+                <form action="{{ route('craftman.product.store') }}" enctype="multipart/form-data" method="POST">
                     @csrf
                     <div class="mb-3">
                         <label for="id" class="form-label">Product ID</label>

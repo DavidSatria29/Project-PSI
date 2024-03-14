@@ -1,17 +1,21 @@
 <?php
 
-use App\Http\Controllers\Admin\CategoryController;
-use App\Http\Controllers\Admin\CustomProductController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
-use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Craftman\DashboardController as CraftmanDashboardController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ProductController as AdminProductController;
+use App\Http\Controllers\Craftman\ProductController as CraftmanProductController;
+use App\Http\Controllers\Admin\CustomProductController as AdminCustomProductController;
+use App\Http\Controllers\Craftman\CustomProductController as CraftmanCustomProductController;
 use App\Http\Controllers\Admin\UserController;
-use App\Models\Categories;
-use App\Models\CustomProduct;
-use App\Models\Product;
-
+use App\Http\Controllers\Admin\ContactController;
+use App\Http\Controllers\Admin\CartController;
+use App\Http\Controllers\Admin\ReservationController;
+use App\Http\Controllers\Admin\OrderController;
+use App\Http\Controllers\Admin\ReviewController;
+use App\Http\Controllers\Craftman\ReportController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,26 +51,65 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
 
         # Product 
-        Route::get('/products', [ProductController::class, 'index'])->name('admin.product.show');
-        Route::get('/products-create', [ProductController::class, 'create'])->name('admin.product.create');
-        Route::post('/products-store', [ProductController::class, 'store'])->name('admin.product.store');
-        Route::get('/products/edit/{id}', [ProductController::class, 'edit']);
-        Route::post('/products-update/{id}', [ProductController::class, 'update'])->name('admin.product.update');
-        Route::delete('/products-delete/{id}', [ProductController::class, 'delete'])->name('admin.product.delete');
+        Route::get('/products', [AdminProductController::class, 'index'])->name('admin.product.show');
+        Route::get('/products-create', [AdminProductController::class, 'create'])->name('admin.product.create');
+        Route::post('/products-store', [AdminProductController::class, 'store'])->name('admin.product.store');
+        Route::get('/products-edit/{product}', [AdminProductController::class, 'edit'])->name('admin.product.edit');
+        Route::post('/products-update/{product}', [AdminProductController::class, 'update'])->name('admin.product.update');
+        Route::delete('/products-delete/{product}', [AdminProductController::class, 'delete'])->name('admin.product.delete');
 
         #custom produk 
-        Route::get('/customProducts', [CustomProductController::class, 'index'])->name('admin.custom_product.show');
-        Route::get('/customProducts-create', [CustomProductController::class, 'create'])->name('admin.custom_product.create');
-        Route::post('/customProducts-store', [CustomProductController::class, 'store'])->name('admin.custom_product.store');
-        Route::get('/customProducts-edit/{custom_product}', [CustomProductController::class, 'edit'])->name('admin.custom_product.edit');
-        Route::post('/customProducts-update/{custom_product}', [CustomProductController::class, 'update'])->name('admin.custom_product.update');
-        Route::get('/customProducts-delete/{custom_product}', [CustomProductController::class, 'delete'])->name('admin.custom_product.delete');
+        Route::get('/customProducts', [AdminCustomProductController::class, 'index'])->name('admin.custom_product.show');
+        Route::get('/customProducts-edit/{custom_product}', [AdminCustomProductController::class, 'edit'])->name('admin.custom_product.edit');
+        Route::post('/customProducts-update/{custom_product}', [AdminCustomProductController::class, 'update'])->name('admin.custom_product.update');
+        Route::get('/customProducts-delete/{custom_product}', [AdminCustomProductController::class, 'delete'])->name('admin.custom_product.delete');
+
+        #contact
+        Route::get('/contact', [ContactController::class, 'index'])->name('admin.contact.show');
+        Route::get('/contact-delete/{contact}', [ContactController::class, 'delete'])->name('admin.contact.delete');
+
+        #cart
+        Route::get('/cart', [CartController::class, 'index'])->name('admin.cart.show');
+        Route::get('/cart-delete/{cart}', [CartController::class, 'delete'])->name('admin.cart.delete');
+
+        #Reservation
+        Route::get('/reservation', [ReservationController::class, 'index'])->name('admin.reservation.show');
+        Route::get('/reservation-delete/{reservation}', [ReservationController::class, 'delete'])->name('admin.reservation.delete');
+
+        #order
+        Route::get('/order', [OrderController::class, 'index'])->name('admin.order.show');
+        Route::get('/orders-edit/{order}', [OrderController::class, 'edit'])->name('admin.order.edit');
+        Route::post('/orders-update/{order}', [OrderController::class, 'update'])->name('admin.order.update');
+        Route::get('/order-delete/{order}', [OrderController::class, 'delete'])->name('admin.order.delete');
+
+        #review
+        Route::get('/review', [ReviewController::class, 'index'])->name('admin.review.show');
+        Route::get('/review-delete/{review}', [ReviewController::class, 'delete'])->name('admin.review.delete');
     });
 });
 
 Route::middleware(['auth', 'role:craftman'])->group(function () {
     Route::prefix('craftman')->group(function () {
         Route::get('/dashboard', [CraftmanDashboardController::class, 'index'])->name('craftman.dashboard');
+
+        # Product
+        Route::get('/products', [CraftmanProductController::class, 'index'])->name('craftman.product.show');
+        Route::get('/products-create', [CraftmanProductController::class, 'create'])->name('craftman.product.create');
+        Route::post('/products-store', [CraftmanProductController::class, 'store'])->name('craftman.product.store');
+        Route::get('/products-edit/{product}', [CraftmanProductController::class, 'edit'])->name('craftman.product.edit');
+        Route::post('/products-update/{product}', [CraftmanProductController::class, 'update'])->name('craftman.product.update');
+        Route::delete('/products-delete/{product}', [CraftmanProductController::class, 'delete'])->name('craftman.product.delete');
+
+
+        #custom produk
+        Route::get('/customProducts', [CraftmanCustomProductController::class, 'index'])->name('craftman.custom_product.show');
+        Route::get('/customProducts-edit/{custom_product}', [CraftmanCustomProductController::class, 'edit'])->name('craftman.custom_product.edit');
+        Route::post('/customProducts-update/{custom_product}', [CraftmanCustomProductController::class, 'update'])->name('craftman.custom_product.update');
+        Route::get('/customProducts-delete/{custom_product}', [CraftmanCustomProductController::class, 'delete'])->name('craftman.custom_product.delete');
+
+        #Report
+        Route::get('/report', [ReportController::class, 'index'])->name('craftman.report.show');
+        Route::get('/report-delete/{report}', [ReportController::class, 'delete'])->name('craftman.report.delete');
     });
 });
 

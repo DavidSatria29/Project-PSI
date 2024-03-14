@@ -22,12 +22,14 @@ class UserController extends Controller
         $request->validate(
             [
                 'name' => 'required|string',
+                'alias' => 'required|string', // tambahkan alias
                 'email' => 'required|email|unique:users,email',
                 'password' => 'required|string|min:8',
                 'role' => 'required|string'
             ],
             [
                 'name.required' => 'tidak boleh kosong',
+                'alias.required' => 'tidak boleh kosong', // tambahkan alias
                 'email.required' => 'tidak boleh kosong',
                 'email.email' => 'tidak valid',
                 'email.unique' => 'sudah terdaftar',
@@ -38,13 +40,14 @@ class UserController extends Controller
         );
         User::create([
             'name' => $request->name,
+            'alias' => $request->alias, // tambahkan alias
             'email' => $request->email,
             'password' => bcrypt($request->password),
             'role' => $request->role
         ]);
         return redirect()->route('admin.user.show')->with('success', 'Data berhasil ditambahkan');
     }
-    
+
     public function edit($id)
     {
         $user = User::findOrFail($id);
@@ -55,17 +58,21 @@ class UserController extends Controller
         $request->validate(
             [
                 'name' => 'required|string',
-                'role' => 'required|string'
+                'role' => 'required|string',
+                'alias' => 'required|string', // tambahkan alias
             ],
             [
                 'name.required' => 'tidak boleh diubah',
-                'role.required' => 'tidak boleh kosong'
+                'role.required' => 'tidak boleh kosong',
+                'alias.required' => 'tidak boleh kosong', // tambahkan alias
             ]
         );
         $user = User::findOrFail($id);
         $user->update([
             'name' => $request->name,
-            'role' => $request->role
+            'role' => $request->role,
+            'alias' => $request->alias, // tambahkan alias
+
         ]);
         return redirect()->route('admin.user.show')->with('success', 'Data berhasil diubah');
     }

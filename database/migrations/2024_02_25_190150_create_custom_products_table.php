@@ -12,13 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('custom_products', function (Blueprint $table) {
-            $table->string('id', 8)->primary();
+            $table->id();
             $table->foreignId('category_id')->constrained('categories');
             $table->foreignId('user_id')->constrained('users');
             $table->string('name');
             $table->integer('amount');
             $table->text('description');
             $table->string('image');
+            $table->enum('status', ['pending', 'approved', 'rejected'])->default('pending');
             $table->timestamps();
         });
     }

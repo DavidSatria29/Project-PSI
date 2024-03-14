@@ -1,5 +1,5 @@
 @extends('layouts.craftmanMaster')
-@section('title', 'Dashboard')
+@section('title', 'Dashboard-Craftman')
 @section('dashboard', 'active')
 @section('content')
           <!-- Content wrapper -->

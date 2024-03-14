@@ -1,13 +1,13 @@
-@extends('layouts.adminMaster')
+@extends('layouts.craftmanMaster')
 @section('title', 'Custom-Products-Dashboard')
-@section('custom_product', 'active')
+@section('custom-product', 'active')
 @section('content')
 <div class="container-fluid pt-4 px-4 container-user">
     <div class="row g-4">
         <div class="col-sm-12">
             <div class=" bg-secondary roundedrounded h-100 p-4">
                 <h6 class="mb-4">Create Form Custom Product</h6>
-                <form action="{{ route('admin.custom_product.update', ['custom_product'=>$custom_product->id])}}" method="POST">
+                <form action="{{ route('craftman.custom_product.update', ['custom_product'=>$custom_product->id])}}" method="POST">
                     @csrf
                     <input type="hidden" name="category_id" value="{{$custom_product->category_id}}">
                     <input type="hidden" name="user_id" value="{{$custom_product->user_id}}">

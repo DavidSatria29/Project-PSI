@@ -1,10 +1,10 @@
-@extends('layouts.adminMaster')
+@extends('layouts.craftmanMaster')
 @section('title', 'product-Dashboard')
 @section('product', 'active')
 @section('content')
 <div class="container-fluid px-5 container-user">
     <div class="container mt-3">
-        <a href="{{ route('admin.product.create')}}" class="btn btn-primary rounded-pill px-3"><i class="bx bx-plus "></i></a>
+        <a href="{{ route('craftman.product.create')}}" class="btn btn-primary rounded-pill px-3"><i class="bx bx-plus "></i></a>
     </div>
     <div class="col-12 mt-1">
         <div class="rounded h-100 p-4">
@@ -33,8 +33,8 @@
                             <td>{{ $product->price }}</td>
                             <td>{{ $product->stock }}</td>
                             <td><img src="{{asset('assets/img/products/'.$product->image)  }}" alt="Product Image" style="max-width: 40px;"></td>
-                            <td><a href="{{route('admin.product.edit', ['product'=>$product->id])}}" class="btn btn-success rounded-pill px-3"><i class="bx bx-edit-alt"></i></a></td>
-                            <td><a href="{{route('admin.product.delete', ['product'=>$product->id])}}" class="btn btn-success rounded-pill px-3"><i class="bx bxs-eraser"></i></a></td>
+                            <td><a href="{{route('craftman.product.edit', ['product'=>$product->id])}}" class="btn btn-success rounded-pill px-3"><i class="bx bx-edit-alt"></i></a></td>
+                            <td><a href="{{route('craftman.product.delete', ['product'=>$product->id])}}" class="btn btn-success rounded-pill px-3"><i class="bx bxs-eraser"></i></a></td>
                         </tr>
                         @empty
                         <tr>

@@ -1,13 +1,13 @@
-@extends('layouts.adminMaster')
+@extends('layouts.craftmanMaster')
 @section('title', 'product-Dashboard')
 @section('product', 'active')
 @section('content')
 <div class="container-fluid pt-4 px-4 container-user">
     <div class="row g-4">
         <div class="col-sm-12">
-            <div class="rounded h-100 p-4">
+            <div class="bg-secondary rounded h-100 p-4">
                 <h6 class="mb-4">Edit Form Product</h6>
-                <form action="{{ route('admin.product.update',['product'=>$product->id]) }}" enctype="multipart/form-data" method="POST">
+                <form action="{{ route('craftman.product.update',['product'=>$product->id]) }}" enctype="multipart/form-data" method="POST">
                     @csrf
                     <div class="mb-3">
                         <label for="id" class="form-label">Product ID</label>

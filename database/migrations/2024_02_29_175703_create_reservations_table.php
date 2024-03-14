@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('city');
             $table->string('workshop_type');
             $table->date('date');
+            $table->timestamp('send_at')->useCurrent();
             $table->timestamps();
         });
     }

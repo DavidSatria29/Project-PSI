@@ -16,9 +16,8 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained('users');
             $table->foreignId('order_id')->constrained('orders');
             $table->string('product_id', 8)->nullable();
-            $table->string('custom_product_id', 8)->nullable();
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
-            $table->foreign('custom_product_id')->references('id')->on('custom_products')->onDelete('cascade');
+            $table->foreign('product_id')->references('id')->on('products');
+            $table->foreignId('custom_product_id')->nullable()->constrained('custom_products');
             $table->string('product_name');
             $table->integer('price');
             $table->integer('amount');
