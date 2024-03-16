@@ -8,15 +8,16 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('admin.index');
 });
+
 Route::get('/login', function () {
     return view('login');
 });
 Route::get('/commerce', function () {
-    return view('shop');
+    return view('commerce');
 });
 Route::get('/pariwisata', function () {
     return view('pariwisata');
 });
-Route::get('/main', function () {
-    return view('main');
+Route::get('/kontak', function () {
+    return view('about');
 });
