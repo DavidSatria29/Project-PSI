@@ -2,6 +2,13 @@
 @section('title', 'User-Dashboard')
 @section('user', 'active')
 @section('content')
+
+<style>
+    .container-user{
+        min-height: 83vh;
+    }
+</style>
+
 <div class="container-fluid px-5 container-user">
     <div class="container mt-3">
         <a href="{{ route('admin.user.create') }}" class="btn btn-primary rounded-pill px-3"><i class="bx bx-plus "></i></a>

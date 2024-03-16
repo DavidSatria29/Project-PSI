@@ -2,6 +2,13 @@
 @section('title', 'Review-Dashboard')
 @section('review', 'active')
 @section('content')
+
+
+<style>
+    .container-user{
+        min-height: 83vh;
+    }
+</style>
 <div class="container-fluid px-5 container-user">
     <div class="col-12 mt-1">
         <div class="rounded h-100 p-4">
