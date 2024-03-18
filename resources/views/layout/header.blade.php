@@ -38,8 +38,8 @@
               <li><a class="nav-link" href="{{ url('/kontak') }}">Kontak</a></li>
             </ul>
               <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-              <li><a class="nav-link" style="color: #12498C" href="{{ url('/login') }}"><i class="fa-solid fa-user"></i></a></li>
-              <li><a class="nav-link" style="color: #12498C" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              <li><a class="nav-link" style="color: #12498C" href="{{ url('/profile') }}"><i class="fa-solid fa-user"></i></a></li>
+              <li><a class="nav-link" style="color: #12498C" href="{{ url('/cart') }}"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
           </div>
         </div>

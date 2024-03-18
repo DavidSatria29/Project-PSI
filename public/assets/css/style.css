@@ -511,7 +511,10 @@ a {
         background-color: #3b5d50; }
 
 .before-footer-section {
-  padding: 7rem 0 12rem 0 !important; }
+  padding: 7rem 0 12rem 0 !important; 
+  background-color: rgba(122, 154, 194, 0.2);
+
+}
 
 .blog-section {
   background-color: rgba(122, 154, 194, 0.2);

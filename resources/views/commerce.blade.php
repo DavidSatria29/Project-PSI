@@ -22,25 +22,26 @@
       {{-- Metode Pembayaran --}}
     <div class="section beta default_h">
       <div class="container py-4">
-        <div class="row">
+        <div class="row align-items-center" style="min-height: 50vh">
           <h1 class="text-center" style="color: #12498C"><b>Metode Pembayaran</b></h1>         
-          <div class="card">
-            <div class="card-body">
-                <div class="form-check py-1">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                      Bank
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
-                      Cash on Delivery
-                    </label>
-                  </div>
-              <a href="#" class="btn btn-primary py-2">Done</a>
+            <div class="card">
+              <div class="card-body">
+                <img src="images/Visa.png" class="mx-2" style="max-height: 3vh" alt="">
+                <img src="images/MC.png" class="mx-2" style="max-height: 3vh" alt="">    
+                  <div class="form-check my-5">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        <b>Bank</b>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        <b>Cash on Delivery</b>
+                      </label>
+                    </div>
+              </div>
             </div>
-          </div>
         </div>
       </div>
     </div>

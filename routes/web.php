@@ -11,12 +11,20 @@ Route::get('/index', function () {
 Route::get('/admin', function () {
     return view('admin.index');
 });
-
+Route::get('/profile', function () {
+    return view('profile');
+});
+Route::get('/status', function () {
+    return view('status');
+});
 Route::get('/login', function () {
     return view('login');
 });
 Route::get('/commerce', function () {
     return view('commerce');
+});
+Route::get('/cart', function () {
+    return view('cart');
 });
 Route::get('/commerce2', function () {
     return view('commerce2');
