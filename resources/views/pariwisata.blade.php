@@ -39,7 +39,7 @@
     </div>
 
     {{-- Start Workshop Keramik Section --}}
-    <div class="section default_h">
+    <div class="section beta default_h">
       <div class="container py-4">
         <div class="row">
           <h1 class="text-center"><b>Workshop Keramik</b></h1>
