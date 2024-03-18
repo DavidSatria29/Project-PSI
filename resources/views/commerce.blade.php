@@ -4,7 +4,7 @@
     <div class="section beta default_h">
       <div class="container pt-4 pb-4">
         <div class="row align-items-center"> <!-- Added align-items-center class here -->
-          <h1 class="text-center"><b>Produk</b></h1>
+          <h1 class="text-center" style="color: #12498C"><b>Produk</b></h1>
         </div>
         <div class="row align-items-center pt-5"> <!-- Added align-items-center class here -->
             <div class="btn-group" role="group" aria-label="Basic outlined example">
@@ -23,7 +23,7 @@
     <div class="section beta default_h">
       <div class="container py-4">
         <div class="row">
-          <h1 class="text-center"><b>Metode Pembayaran</b></h1>         
+          <h1 class="text-center" style="color: #12498C"><b>Metode Pembayaran</b></h1>         
           <div class="card">
             <div class="card-body">
                 <div class="form-check py-1">

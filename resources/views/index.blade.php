@@ -6,7 +6,7 @@
 		<div class="why-choose-section">
 			<div class="container">
 				<div class="row align-items-center">
-					<h1 class="section-title text-center"><b>Sejarah</b></h1>
+					<h1 class="section-title text-center" style="color: #12498C"><b>SEJARAH</b></h1>
 					<div class="col-lg-5">
 						<div class="img-wrap">
 							<img src="images/keramik2.png" alt="Image" class="img-fluid">
@@ -34,7 +34,7 @@
 		<div class="why-choose-section">
 			<div class="container">
 				<div class="row align-items-center">
-					<h1 class="text-center"><b>Lokasi dan Jam Operasional</b></h1>
+					<h1 class="text-center" style="color: #12498C"><b>LOKASI DAN JAM OPERASIONAL</b></h1>
 					<div class="col-lg-6">
 						<h3 class="text-center align-middle">SENIN - MINGGU <br>08.00 - 15.00</h3>
 					</div>
@@ -52,7 +52,7 @@
 				<div class="popular-product">
 					<div class="container">
 						<div class="row justify-content-between">
-							<h1 class="section-title text-center"><b>Fasilitas</b></h1>
+							<h1 class="section-title text-center" style="color: #12498C"><b>FASILITAS</b></h1>
 
 							<div class="row">
 								<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
@@ -147,7 +147,7 @@
 		<div class="blog-section">
 			<div class="container">
 				<div class="row mb-5">
-					<h1 class="section-title text-center"><b>Review</b></h1>
+					<h1 class="section-title text-center" style="color: #12498C"><b>REVIEW</b></h1>
 					<div class="col-md-6">
 					</div>
 					<div class="col-md-6 text-start text-md-end">

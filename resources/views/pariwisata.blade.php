@@ -3,7 +3,7 @@
     <div class="section beta default_h">
       <div class="container py-4">
         <div class="row">
-          <h1 class="text-center"><b>Paket Wisata</b></h1>
+          <h1 class="text-center" style="color: #12498C"><b>PAKET WISATA</b></h1>
           <div class="col d-flex" style="justify-content: center">
             <div class="card" style="width: 18rem;">
               <img src="images/paket1.png" class="card-img-top p-3" alt="...">
@@ -42,7 +42,7 @@
     <div class="section beta default_h">
       <div class="container py-4">
         <div class="row">
-          <h1 class="text-center"><b>Workshop Keramik</b></h1>
+          <h1 class="text-center" style="color: #12498C"><b>WORKSHOP KERAMIK</b></h1>
           <div class="col d-flex" style="justify-content: center">
             <div class="card mx-1" style="width: 18rem;">
               <img src="images/Paket Edukasi.png" class="card-img-top" alt="...">

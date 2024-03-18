@@ -4,7 +4,7 @@
 <div class="section beta default_h">
 	<div class="container">
 		<div class="row my-2" style="justify-content: space-between">
-			<h1 class="text-center"><b>KONTAK</b></h1>
+			<h1 class="text-center" style="color: #12498C"><b>KONTAK</b></h1>
 			
 			<div class="col">
 				<form class="row g-3 py-3 px-5">
