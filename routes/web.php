@@ -18,6 +18,9 @@ Route::get('/login', function () {
 Route::get('/commerce', function () {
     return view('commerce');
 });
+Route::get('/commerce2', function () {
+    return view('commerce2');
+});
 Route::get('/pariwisata', function () {
     return view('pariwisata');
 });

@@ -37,4 +37,27 @@
         </div>
       </div>
     </div>
+
+    {{-- Start Workshop Keramik Section --}}
+    <div class="section default_h">
+      <div class="container py-4">
+        <div class="row">
+          <h1 class="text-center"><b>Workshop Keramik</b></h1>
+          <div class="col d-flex" style="justify-content: center">
+            <div class="card mx-1" style="width: 18rem;">
+              <img src="images/Paket Edukasi.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card mx-1" style="width: 18rem;">
+              <img src="images/Paket Edukasi.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card mx-1" style="width: 18rem;">
+              <img src="images/Paket Edukasi.png" class="card-img-top" alt="...">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    {{-- end Workshop Keramik Section --}}
+    
     @include('layout.footer')
