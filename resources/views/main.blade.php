@@ -33,7 +33,7 @@
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="{{ url('/commerce') }}">go to page</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -44,7 +44,7 @@
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="{{ url('/pariwisata') }}">go to page</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -164,33 +164,33 @@
       <div class="container py-4">
         <div class="row">
           <h1 class="text-center"><b>REVIEW</b></h1>
-          <div class="col">
+          <div class="col d-flex" style="justify-content: center">
             <div class="card" style="width: 18rem;">
-              <img src="images/card1.png" class="card-img-top" alt="...">
+              <img src="images/card1.png" class="card-img-top p-3" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h4 class="card-title text-center">Lorem ipsum</h4>
+                <h5 class="card-text text-center">-Lisa-</h5>
+                <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis turpis id justo pretium, id bibendum ipsum lobortis. Donec vel hendrerit ante. Integer id justo ut est porta sollicitudin.</p>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col d-flex" style="justify-content: center">
             <div class="card" style="width: 18rem;">
-              <img src="images/card2.png" class="card-img-top" alt="...">
+              <img src="images/card2.png" class="card-img-top p-3" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h4 class="card-title text-center">Lorem ipsum</h4>
+                <h5 class="card-text text-center">-Celine-</h5>
+                <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis turpis id justo pretium, id bibendum ipsum lobortis. Donec vel hendrerit ante. Integer id justo ut est porta sollicitudin.</p>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col d-flex" style="justify-content: center">
             <div class="card" style="width: 18rem;">
-              <img src="images/card3.png" class="card-img-top" alt="...">
+              <img src="images/card3.png" class="card-img-top p-3" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h4 class="card-title text-center">Lorem ipsum</h4>
+                <h5 class="card-text text-center">-Tiffany-</h5>
+                <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis turpis id justo pretium, id bibendum ipsum lobortis. Donec vel hendrerit ante. Integer id justo ut est porta sollicitudin.</p>
               </div>
             </div>
           </div>
@@ -209,9 +209,9 @@
               <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
             </div>
             <div class="row">
-              <div class="col-2"><i class="fa-brands fa-x-twitter"></i></div>
-              <div class="col-2"><i class="fa-brands fa-instagram"></i></div>
-              <div class="col-2"><i class="fa-brands fa-facebook"></i></div>
+              <div class="col-2"><i class="fa-brands fa-x-twitter fa-2x"></i></div>
+              <div class="col-2"><i class="fa-brands fa-instagram fa-2x"></i></div>
+              <div class="col-2"><i class="fa-brands fa-facebook fa-2x"></i></div>
             </div>
           </div>
           <div class="col">
