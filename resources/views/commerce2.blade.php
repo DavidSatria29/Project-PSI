@@ -8,11 +8,11 @@
         </div>
         <div class="row align-items-center pt-5"> <!-- Added align-items-center class here -->
             <div class="btn-group" role="group" aria-label="Basic outlined example">
-                <button type="button" class="btn btn-outline-primary p-5"><i class="fa-solid fa-whiskey-glass fa-5x"></i><br>Gelas</button>
-                <button type="button" class="btn btn-outline-primary p-5"><i class="fa-solid fa-seedling fa-5x"></i><br>Vas</button>
-                <button type="button" class="btn btn-outline-primary p-5"><i class="fa-solid fa-utensils fa-5x"></i><br>Alat Makan</button>
-                <button type="button" class="btn btn-outline-primary p-5"><i class="fa-solid fa-palette fa-5x"></i><br>Custom</button>
-                <button type="button" class="btn btn-outline-primary p-5"><i class="fa-solid fa-hat-wizard fa-5x"></i><br>Hiasan</button>
+                <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-whiskey-glass fa-5x"></i><br>Gelas</button>
+                <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-seedling fa-5x"></i><br>Vas</button>
+                <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-utensils fa-5x"></i><br>Alat Makan</button>
+                <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-palette fa-5x"></i><br>Custom</button>
+                <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-hat-wizard fa-5x"></i><br>Hiasan</button>
               </div>
         </div>
 

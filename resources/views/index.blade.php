@@ -2,7 +2,7 @@
 	
 @include('layout.header')
 
-	<!-- Start Why Choose Us Section -->
+	<!-- Start Sejarah Section -->
 		<div class="why-choose-section">
 			<div class="container">
 				<div class="row align-items-center">
@@ -15,7 +15,11 @@
 						</div>
 					</div>
 					<div class="col-lg-6">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis turpis id justo pretium, id bibendum ipsum lobortis. Donec vel hendrerit ante. Integer id justo ut est porta sollicitudin. Proin ac velit nec magna lacinia ultrices. Vivamus eleifend urna ut odio molestie, eget dictum odio feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vitae purus vitae risus gravida malesuada nec sit amet odio. Sed eleifend luctus justo, vel malesuada lacus aliquet eu. Vivamus non ex eu nisi interdum bibendum. Curabitur vel diam nec justo convallis facilisis. Suspendisse potenti. Vivamus maximus, felis vel tristique consequat, libero libero suscipit purus, eget pharetra risus nunc eu velit. Curabitur tincidunt efficitur purus, eget bibendum lacus sodales non. Vivamus ut semper leo. Sed id eros arcu.</p>
+						<p>
+							Sejarah Kampung Keramik Dinoyo berakar pada Kerajaan Kanjuruhan, yang terkenal dengan keahliannya dalam membuat gerabah. Seiring waktu, teknik pembuatan keramik berkembang dan kampung ini menjadi pusat industri keramik di Malang.
+							Yang membuat Kampung Keramik Dinoyo begitu istimewa adalah keasliannya. Berjalan di sepanjang gang-gang sempit, Anda akan melihat rumah-rumah tradisional dengan tungku pembakaran keramik di halamannya. 
+							Penduduknya yang ramah dengan senang hati akan menunjukkan kepada Anda proses pembuatan keramik, mulai dari pemilihan bahan baku hingga pewarnaan dan pembakaran.
+						</p>
 
 					</div>
 
@@ -24,9 +28,9 @@
 				</div>
 			</div>
 		</div>
-		<!-- End Why Choose Us Section -->
+		<!-- End Sejarah Section -->
 
-		<!-- Start Why Choose Us Section -->
+		<!-- Start Lokasi dan Jam Operasional Section -->
 		<div class="why-choose-section">
 			<div class="container">
 				<div class="row align-items-center">
@@ -43,8 +47,8 @@
 				</div>
 			</div>
 		</div>
-		<!-- End Why Choose Us Section -->
-				<!-- Start Popular Product -->
+		<!-- End Lokasi dan Jam Operasional Section -->
+			<!-- Start Fasilitas -->
 				<div class="popular-product">
 					<div class="container">
 						<div class="row justify-content-between">
@@ -137,9 +141,9 @@
 						</div>
 					</div>
 				</div>
-				<!-- End Popular Product -->
+				<!-- End Fasilitas -->
 		
-		<!-- Start Blog Section -->
+		<!-- Start Review Section -->
 		<div class="blog-section">
 			<div class="container">
 				<div class="row mb-5">
@@ -201,7 +205,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- End Blog Section -->	
+		<!-- End Review Section -->	
 
 
 @include('layout.footer')

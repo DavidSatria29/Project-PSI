@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
+    return view('landing');
+});
+Route::get('/index', function () {
     return view('index');
 });
 Route::get('/admin', function () {
@@ -19,5 +22,5 @@ Route::get('/pariwisata', function () {
     return view('pariwisata');
 });
 Route::get('/kontak', function () {
-    return view('about');
+    return view('kontak');
 });
