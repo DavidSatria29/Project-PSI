@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- Web Icon -->
-    <link rel="icon" href="{{ asset('assets/auth/img/LOGO.png') }}">
+    <link rel="icon" href="{{ asset('../assets/img/logo/Logo.png') }}">
     <link href="{{ asset('assets/auth/css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/auth/css/login.css') }}">
     {{-- <link href="{{ asset('asset/img/logo4.png') }}" rel="icon"> --}}

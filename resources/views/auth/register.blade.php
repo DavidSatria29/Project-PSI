@@ -10,11 +10,11 @@
     <div class="row border rounded-5 p-3 bg-white shadow box-area">
     <!--------------------------- Left Box ----------------------------->
 
-        <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #cd6e10;">
+        <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #12498C;">
             <div class="featured-image mb-3">
-            <img src="{{ asset( asset('img/LOGO.png')) }}" class="img-fluid" style="width: 200px;">
+            <img src="{{ asset('../assets/auth/img/Logo.png') }}" class="img-fluid" style="width: 200px;">
             </div>
-            <p class="text-white fs-2 text-center" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Selamat Datang di Website SABUMI</p>
+            <p class="text-white fs-2 text-center" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Selamat Datang di Website SIDIKAR</p>
             <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Silahkan daftar terlebih dahulu</small>
         </div> 
 
@@ -68,7 +68,7 @@
                     </div>
                     <div class=" input-group mb-3 d-flex justify-content-center mt-2">
                         <div class="justify-content-center">
-                            <button type="submit" class="btn btn-primary align-center" id="tombol">
+                            <button type="submit" class="btn text-white align-center" style="background-color: #12498C" id="tombol">
                                 {{ __('Register') }}
                             </button>
                         </div>
@@ -76,7 +76,7 @@
                 </form>
                 <div class="row">
                     <div class="col-7">
-                        <small>{{ __('Sudah Punya Akun ?') }} <a href="{{ route('login') }}">{{ __('Masuk') }}</a></small>
+                        <small>{{ __('Sudah Punya Akun ?') }} <a href="{{ route('login') }}">{{ __('Masuk') }} </a></small>
                     </div>
                 </div>
             </div>

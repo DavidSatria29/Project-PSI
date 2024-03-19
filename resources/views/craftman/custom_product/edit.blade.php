@@ -11,7 +11,7 @@
 <div class="container-fluid pt-4 px-4 container-user">
     <div class="row g-4">
         <div class="col-sm-12">
-            <div class=" bg-secondary roundedrounded h-100 p-4">
+            <div class="roundedrounded h-100 p-4">
                 <h6 class="mb-4">Create Form Custom Product</h6>
                 <form action="{{ route('craftman.custom_product.update', ['custom_product'=>$custom_product->id])}}" method="POST">
                     @csrf
