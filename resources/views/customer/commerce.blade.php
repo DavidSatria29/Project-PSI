@@ -1,4 +1,6 @@
-@include('layout.header')
+@extends('layouts.CustomerMaster')
+@section('commerce', 'active')
+@section('content')
 
     {{-- Produk --}}
     <div class="section beta default_h">
@@ -45,5 +47,4 @@
         </div>
       </div>
     </div>
-
-    @include('layout.footer')
+@endsection

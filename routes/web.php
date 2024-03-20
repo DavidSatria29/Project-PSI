@@ -16,6 +16,9 @@ use App\Http\Controllers\Admin\ReservationController;
 use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\ReviewController;
 use App\Http\Controllers\Craftman\ReportController;
+use App\Http\Controllers\Customer\HomeController;
+use App\Http\Controllers\Customer\CommerceController;
+use App\Http\Controllers\Customer\TouristController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,9 +30,20 @@ use App\Http\Controllers\Craftman\ReportController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::middleware(['auth', 'role:user'])->group(
+    function () {
+        Route::get('/profile', [HomeController::class, 'profile'])->name('user.profile');
+        Route::get('/editProfile/{id}', [HomeController::class, 'editProfile'])->name('user.editProfile');
+        Route::post('/updateProfile/{id}', [HomeController::class, 'updateProfile'])->name('user.updateProfile');
+        Route::get('/cart', [CommerceController::class, 'cart'])->name('user.cart');
+        Route::get('/status', [CommerceController::class, 'status'])->name('user.status');
+    }
+);
+Route::get('/', [HomeController::class, 'index'])->name('user.home');
+Route::get('/contact', [HomeController::class, 'contact'])->name('user.contact');
+Route::post('/storeContact', [HomeController::class, 'storeCOntact'])->name('user.storeContact');
+Route::get('/commerce', [CommerceController::class, 'index'])->name('user.commerce');
+Route::get('/tourist', [TouristController::class, 'index'])->name('user.tourist');
 Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::prefix('admin')->group(function () {
         Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
@@ -116,4 +130,4 @@ Route::middleware(['auth', 'role:craftman'])->group(function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

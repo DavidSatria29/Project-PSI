@@ -1,4 +1,5 @@
-@include('layout.header')
+@include('layouts.CustomerMaster')
+@section('content')
 <div class="untree_co-section before-footer-section">
     <div class="container">
       <div class="row mb-5">
@@ -137,5 +138,4 @@
       </div>
     </div>
   </div>
-
-@include('layout.footer')
+@endsection

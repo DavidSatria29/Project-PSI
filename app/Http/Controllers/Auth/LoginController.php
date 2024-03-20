@@ -55,7 +55,7 @@ class LoginController extends Controller
             } else if (auth()->user()->role == 'craftman') {
                 return redirect()->route('craftman.dashboard');
             } else {
-                return redirect()->route('user.beranda');
+                return redirect()->route('user.home');
             }
         } else {
             return redirect()->route('login')

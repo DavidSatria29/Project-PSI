@@ -18,7 +18,7 @@
                             <th>NO</th>
                             <th>Nama</th>
                             <th>Email</th>
-                            <th>Subject</th>
+                            <th>Phone</th>
                             <th>Message</th>
                             <th>Delete</th>
                         </tr>
@@ -29,7 +29,7 @@
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $contact->name }}</td>
                             <td>{{ $contact->email }}</td>
-                            <td>{{ $contact->subject }}</td>
+                            <td>{{ $contact->phone }}</td>
                             <td>{{ $contact->message }}</td>
                             <td><a href="{{ route('admin.contact.delete', ['contact'=>$contact->id])}}" class="btn btn-danger rounded-pill px-3"><i class="bx bx-eraser"></i></a></td>
                         </tr>

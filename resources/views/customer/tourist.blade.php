@@ -1,4 +1,6 @@
-@include('layout.header')
+@extends('layouts.CustomerMaster')
+@section('tourist', 'active')
+@section('content')
 {{-- Paket Wisata --}}
     <div class="section beta default_h">
       <div class="container py-4">
@@ -59,5 +61,4 @@
       </div>
     </div>
     {{-- end Workshop Keramik Section --}}
-    
-    @include('layout.footer')
+@endsection

@@ -1,22 +1,42 @@
-@include('layout.header')
+@extends('layouts.CustomerMaster')
+@section('content')
 
 <div class="section beta default_h">
-    <div class="container">
-        <div class="row py-5">
+    <div class="container d-flex justify-content-center mt-2">
+      <div class="card" style="width: 35rem;">
+        <div class="card-body">
+          <h5 class="card-title text-center">Profil</h5>
+          <div class="container">
+            <div class="row">
+              <div class="col-3"><b>Nama</b></div>
+              <div class="col-9">{{ $user->name }}</div>
+            </div>
+            <div class="row">
+              <div class="col-3"><b>Email</b></div>
+              <div class="col-9">{{ $user->email }}</div>
+            </div>
+            <div class="row">
+              <div class="col-3"><b>Telepon</b></div>
+              <div class="col-9">{{ $user->phone }}</div>
+            </div>
+            <div class="row">
+              <div class="col-3"><b>Alamat</b></div>
+              <div class="col-9">{{ $user->address }}</div>
+            </div>
+          </div>
+          <div class="mt-2 text-center">
+            <a href="{{ route('user.editProfile',['id'=>$user->id]) }}" class="btn btn-primary">Edit Profil</a>
+            <a href="{{ route('user.status') }}" class="btn btn-primary">Status Order</a>
+          </div>
+        </div>
+      </div>
+        {{-- <div class="row py-5">
             <h1 class="text-center text-uppercase" style="color: #12498C"><b>My Profile</b></h1>
             <h5 class="d-flex justify-content-end my-5" style="color: #12498C"><b>Welcome, Customer</b></h5>
             <div class="col-4">
-                <ul class="list group" >
-                    <li class="list-group-item" style="color: #12498C"><b>Manage My Account</b></li>
-                    <li class="list-group-item" style="color: #12498C">My Profile</li>
-                    <li class="list-group-item">Address Book</li>
-                    <li class="list-group-item">My Payment Option</li>
-                </ul>
-                <ul class="list group" >
-                    <li class="list-group-item" style="color: #12498C"><b>My Orders</b></li>
-                    <li class="list-group-item">My Returns</li>
-                    <li class="list-group-item">My Concelation</li>
-                    <li class="list-group-item"><a href="{{ url('/status') }}">Status Order</a></li>
+                <ul class="list group">
+                    <li class="list-group-item mb-3"><a href="" class="btn btn-primary">Ubah Akun</a></li>
+                    <li class="list-group-item"><a href="{{ route('user.status') }}" class="btn btn-primary">Status Order</a></li>
                 </ul>
             </div>
             <div class="col-8">
@@ -66,8 +86,7 @@
                     <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Edit your profile</button>
                   </form>
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>
-
-@include('layout.footer')
+@endsection

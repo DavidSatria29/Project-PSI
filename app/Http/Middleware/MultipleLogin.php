@@ -17,7 +17,7 @@ class MultipleLogin
     public function handle($request, Closure $next, ...$roles)
     {
         if (!auth()->check()) {
-            return redirect('home');
+            return redirect('user.home');
         }
 
         $userRoles = explode(';', $roles[0]);

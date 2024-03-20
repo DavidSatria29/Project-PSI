@@ -1,4 +1,5 @@
-@include('layout.header')
+@extends('layouts.CustomerMaster')
+@section('content')
 
 {{-- start status section --}}
 
@@ -52,5 +53,4 @@
 </div>
 
 {{-- end status section --}}
-
-@include('layout.footer')
+@endsection

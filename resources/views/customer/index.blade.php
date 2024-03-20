@@ -1,6 +1,6 @@
-		
-	
-@include('layout.header')
+@extends('layouts.CustomerMaster')
+@section('home', 'active')
+@section('content')
 
 	<!-- Start Sejarah Section -->
 		<div class="why-choose-section">
@@ -206,6 +206,4 @@
 			</div>
 		</div>
 		<!-- End Review Section -->	
-
-
-@include('layout.footer')
+@endsection
