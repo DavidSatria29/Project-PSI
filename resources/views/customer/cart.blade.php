@@ -1,4 +1,4 @@
-@include('layouts.CustomerMaster')
+@extends('layouts.CustomerMaster')
 @section('content')
 <div class="untree_co-section before-footer-section">
     <div class="container">
