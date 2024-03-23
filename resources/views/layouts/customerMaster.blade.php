@@ -26,7 +26,7 @@
           <a class="navbar-brand" style="color: #12498C" href="{{ route('user.home') }}">CERAMIC DINOYO</a>
   
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" style="color: #12498C"></i></span>
           </button>
   
           <div class="collapse navbar-collapse" id="navbarsFurni">
@@ -95,13 +95,13 @@
        <div class="hero">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-lg-5">
+                <div class="col-md-5">
                     <div class="intro-excerpt">
                         <h1>Kampung Wisata <span clsas="d-block">Keramik Dinoyo</span></h1>
                         <p class="mb-4">Kampung Wisata Keramik Dinoyo merupakan destinasi wisata yang berada di Kota Malang.</p>                        <p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
                     </div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-md-7" style="align-content: ">
                     <div class="hero-img-wrap">
                         <img src="{{ asset('images/Keramikdummy.png') }}" class="img-fluid">
                     </div>
