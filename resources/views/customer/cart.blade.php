@@ -1,5 +1,6 @@
 @extends('layouts.CustomerMaster')
 @section('content')
+
 <div class="untree_co-section before-footer-section">
     <div class="container">
       <div class="row mb-5">
@@ -22,7 +23,7 @@
                     <img src="images/card3.png" alt="Image" class="img-fluid">
                   </td>
                   <td class="product-name">
-                    <h2 class="h5 ">Topeng</h2>
+                    <p >Topeng</p>
                   </td>
                   <td class="product-price">Rp.50000</td>
                   <td class="product-quantity">
@@ -46,7 +47,7 @@
                     <img src="images/keramik2.png" alt="Image" class="img-fluid">
                   </td>
                   <td class="product-name">
-                    <h2 class="h5 ">Vas</h2>
+                    <p>Vas</p>
                   </td>
                   <td class="product-price">Rp.100000</td>
                   <td class="product-quantity">
@@ -71,31 +72,9 @@
       </div>
 
       <div class="row">
-        <div class="col-md-6">
-          <div class="row mb-5">
-            <div class="col-md-4 mb-3 mb-md-0">
-              <button class="btn btn-primary btn-sm btn-block">Update Cart</button>
-            </div>
-            <div class="col-md-6">
-              <button class="btn btn-primary btn-sm btn-block">Continue Shopping</button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <label class=" h4 text-uppercase" for="coupon" style="color: #12498C"><b>Coupon</b></label>
-              <p>Masukan kode kuponmu</p>
-            </div>
-            <div class="col-md-8 mb-3 mb-md-0">
-              <input type="text" class="form-control py-3" id="coupon" placeholder="Coupon Code">
-            </div>
-            <div class="col-md-4">
-              <button class="btn btn-primary">Apply Coupon</button>
-            </div>
-          </div>
-        </div>
         <div class="col-md-6 pl-5">
           <div class="row justify-content-end">
-            <div class="col-md-7">
+            <div class="col-md">
               <div class="row">
                 <div class="col-md-12 text-right border-bottom mb-5">
                   <h3 class=" h4 text-uppercase" style="color: #12498C"><b>Cart Totals</b></h3>
@@ -138,4 +117,27 @@
       </div>
     </div>
   </div>
+
+  <script>
+    // Function to calculate product total
+    function calculateProductTotal() {
+        // Get product price
+        var productPrice = parseFloat(document.querySelector('.product-price').textContent.replace('Rp.', '').trim());
+
+        // Get product quantity
+        var productQuantity = parseInt(document.querySelector('.quantity-amount').value);
+
+        // Calculate product total
+        var productTotal = productPrice * productQuantity;
+
+        // Display product total
+        document.querySelector('.product-total').textContent = 'Rp.' + productTotal;
+    }
+
+    // Event listener for quantity change
+    document.querySelector('.quantity-amount').addEventListener('input', calculateProductTotal);
+
+    // Initial calculation on page load
+    calculateProductTotal();
+</script>
 @endsection

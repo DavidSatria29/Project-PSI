@@ -20,6 +20,13 @@
     /* tambahkan format font yang mendukung jika ada */
 }
 
-body {
-    font-family: 'NamaFont', sans-serif;
+
+
+.circle{
+    max-width: 500px;
+}
+@media(max-width: 768px){
+    .circle{
+        max-width: 0px;
+    }
 }
