@@ -129,12 +129,6 @@ a {
       z-index: 2;
       max-width: 780px;
       left: -20px; }
-      @media (max-width: 768px){
-        .hero .hero-img-wrap img{
-          max-width: 300px;
-          position: unset;
-        }
-      }
       @media (min-width: 768px) {
         .hero .hero-img-wrap img {
           right: 0px;
@@ -163,11 +157,23 @@ a {
       @media (min-width: 1200px) {
         .hero .hero-img-wrap:after {
           top: -40px; } }
-      @media (max-width: 768px){
-        .hero .hero-img-wrap::after{
-          width: 0px;
-          height: 0px;
-        }}
+        @media (max-width: 768px) {
+        .hero .hero-img-wrap {
+          display: flex;
+          justify-content: center;
+        }
+        .hero .hero-img-wrap img {
+          max-width: 100%;
+          height: auto;
+        }
+        .hero .intro-excerpt {
+          text-align: center;
+        }
+        .hero .hero-img-wrap::after {
+          display: none;
+        }
+      }
+
 .btn {
   font-weight: 600;
   padding: 12px 30px;
@@ -287,6 +293,14 @@ a {
 }
   .why-choose-section .img-wrap {
     position: relative; }
+    @media screen and (max-width: 768px) {
+      .why-choose-section .img-wrap {
+        text-align: center;
+      }
+      .why-choose-section .img-wrap img {
+        display: inline-block;
+      }
+    }
     .why-choose-section .img-wrap:before {
       position: absolute;
       content: "";
@@ -302,6 +316,7 @@ a {
     .why-choose-section .img-wrap img {
       border-radius: 20px; }
 
+      
 .feature {
   margin-bottom: 30px; }
   .feature .icon {
@@ -534,6 +549,13 @@ a {
   .blog-section .post-entry .post-thumbnail {
     display: block;
     margin-bottom: 20px; }
+@media (max-width: 768px) {
+  .blog-section .post-entry .post-thumbnail .card {
+    margin: 0 auto; /* Add this line to center the card */
+    float: none; /* Add this line to remove any float */
+  }
+}
+
     .blog-section .post-entry .post-thumbnail img {
       border-radius: 20px;
       -webkit-transition: .3s all ease;
