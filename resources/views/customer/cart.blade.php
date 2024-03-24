@@ -23,7 +23,7 @@
                     <img src="images/card3.png" alt="Image" class="img-fluid">
                   </td>
                   <td class="product-name">
-                    <h2 class="h5 ">Topeng</h2>
+                    <p >Topeng</p>
                   </td>
                   <td class="product-price">Rp.50000</td>
                   <td class="product-quantity">
@@ -47,7 +47,7 @@
                     <img src="images/keramik2.png" alt="Image" class="img-fluid">
                   </td>
                   <td class="product-name">
-                    <h2 class="h5 ">Vas</h2>
+                    <p>Vas</p>
                   </td>
                   <td class="product-price">Rp.100000</td>
                   <td class="product-quantity">
@@ -74,7 +74,7 @@
       <div class="row">
         <div class="col-md-6 pl-5">
           <div class="row justify-content-end">
-            <div class="col-md-7">
+            <div class="col-md">
               <div class="row">
                 <div class="col-md-12 text-right border-bottom mb-5">
                   <h3 class=" h4 text-uppercase" style="color: #12498C"><b>Cart Totals</b></h3>
