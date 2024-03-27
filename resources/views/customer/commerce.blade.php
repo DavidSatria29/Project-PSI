@@ -9,7 +9,7 @@
           <h1 class="text-center" style="color: #12498C"><b>Produk</b></h1>
         </div>
         <div class="row align-items-center pt-5"> <!-- Added align-items-center class here -->
-            <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <div class="d-grid gap-2 d-md-block text-center" role="group" aria-label="Basic outlined example">
                 <a href="{{ route('user.commerce') }}" type="button" class="btn btn-outline-primary p-5"><i class="fas fa-wine-glass fa-5x"></i><br>Gelas</a>
                 <a href="{{ route('user.commerce') }}" type="button" class="btn btn-outline-primary p-5"><i class="fa-solid fa-whiskey-glass fa-5x"></i><br>Vas</a>
                 <a href="{{ route('user.commerce') }}" type="button" class="btn btn-outline-primary p-5"><i class="fa-solid fa-utensils fa-5x"></i><br>Alat Makan</a>
