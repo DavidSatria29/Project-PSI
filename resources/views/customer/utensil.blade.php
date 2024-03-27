@@ -4,10 +4,10 @@
 
 {{-- Start Glass product --}}
 <div class="container pt-4">
-    <div class="row align-items-center"> <!-- Added align-items-center class here -->
-        <h1 class="text-center" style="color: #12498C"><b>Produk Gelas</b></h1>
-    </div>
-    <div class="row my-5 ">
+  <div class="row align-items-center"> <!-- Added align-items-center class here -->
+      <h1 class="text-center" style="color: #12498C"><b>Produk Alat Makan</b></h1>
+  </div>
+  <div class="row my-5">
       <div class="col-md-3">
         <div class="card">
           <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 1">
