@@ -131,6 +131,9 @@ Route::middleware(['auth', 'role:craftman'])->group(function () {
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('cart2', function () {
+Route::get('/cart2', function () {
     return view('customer.cart');
+});
+Route::get('/gelas', function () {
+    return view('customer.gelas');
 });
