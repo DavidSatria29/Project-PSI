@@ -16,8 +16,14 @@
                 <form action="{{ route('admin.order.update', ['order'=>$order->id]) }}" method="POST">
                     @csrf
                     <div class="mb-3">
-                        <label for=name" class="form-label">Status</label>
-                        <input type="text" class="form-control" id="name" name="name" value="{{ old('status') ?? $order->status }}">
+                        <label for="status" class="form-label">Status</label>
+                        <select name="status" id="status" class="form-control">
+                            <option>{{ old('status') ?? $order->status }}</option>
+                            <option value="Diproses">Diproses</option>
+                            <option value="Dikirim">Dikirim</option>
+                            <option value="Selesai">Selesai</option>
+                            <option value="Dibatalkan">Dibatalkan</option>
+                        </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Kirim</button>
                 </form>

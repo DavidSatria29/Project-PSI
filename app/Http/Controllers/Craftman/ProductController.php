@@ -28,6 +28,8 @@ class ProductController extends Controller
                 'id' => 'required|string|max:8|unique:products,id',
                 'name' => 'required|string|max:255',
                 'type' => 'required|string|max:255',
+                'size' => 'required|string|max:255',
+                'color' => 'required|string|max:255',
                 'price' => 'required|integer',
                 'stock' => 'required|integer',
                 'image' => 'required',
@@ -37,6 +39,8 @@ class ProductController extends Controller
                 'id.required' => 'tidak boleh kosong',
                 'name.required' => 'tidak boleh kosong',
                 'type.required' => 'tidak boleh kosong',
+                'size.required' => 'tidak boleh kosong',
+                'color.required' => 'tidak boleh kosong',
                 'price.required' => 'tidak boleh kosong',
                 'stock.required' => 'tidak boleh kosong',
                 'image.required' => 'tidak boleh kosong',
@@ -72,6 +76,8 @@ class ProductController extends Controller
             'id' => $request->id,
             'name' => $request->name,
             'type' => $request->type,
+            'size' => $request->size,
+            'color' => $request->color,
             'price' => $request->price,
             'stock' => $request->stock,
             'image' => $file_name,
@@ -94,6 +100,8 @@ class ProductController extends Controller
                 'id' => 'required|string|max:255',
                 'name' => 'required|string|max:255',
                 'type' => 'required|string|max:255',
+                'size' => 'required|string|max:255',
+                'color' => 'required|string|max:255',
                 'price' => 'required|integer',
                 'stock' => 'required|integer',
                 'image' => 'nullable',
@@ -103,6 +111,8 @@ class ProductController extends Controller
                 'id.required' => 'tidak boleh kosong',
                 'name.required' => 'tidak boleh kosong',
                 'type.required' => 'tidak boleh kosong',
+                'size.required' => 'tidak boleh kosong',
+                'color.required' => 'tidak boleh kosong',
                 'price.required' => 'tidak boleh kosong',
                 'stock.required' => 'tidak boleh kosong',
                 'image.required' => 'tidak boleh kosong',
@@ -122,14 +132,24 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
 
         // Melakukan update data produk
-        $product->update([
+        $updateData = [
             'id' => $request->id,
             'name' => $request->name,
             'type' => $request->type,
+            'size' => $request->size,
+            'color' => $request->color,
             'price' => $request->price,
             'stock' => $request->stock,
-            'image' => $file_name,
-        ]);
+        ];
+
+        // Jika ada file gambar yang diunggah, tambahkan 'image' ke dalam array $updateData
+        if ($request->hasFile('image')) {
+            $updateData['image'] = $file_name;
+        }
+        // Melakukan update data produk
+        $product->update($updateData);
+
+        // Mengembalikan redirect dengan pesan sukses jika berhasil
         return redirect()->route('craftman.product.show')->with('success', 'Data berhasil diubah');
     }
 

@@ -11,10 +11,15 @@ class CustomProduct extends Model
     protected $fillable = [
         'id',
         'name',
+        'type',
+        'color',
         'amount',
         'description',
+        'price',
         'image',
-        'status'
+        'status',
+        'category_id',
+        'user_id',
     ];
 
 

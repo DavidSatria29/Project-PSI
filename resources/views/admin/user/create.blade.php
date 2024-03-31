@@ -33,7 +33,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="role" class="form-label">Role</label>
-                        <input type="text" class="form-control" id="role" name="role" value="{{ old('role') }}">
+                        <select name="role" id="role" class="form-select" aria-label="Default select example">
+                            <option value="">---pilih----</option>
+                            <option value="admin">Admin</option>
+                            <option value="customer">customer</option>
+                        </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Kirim</button>
                 </form>

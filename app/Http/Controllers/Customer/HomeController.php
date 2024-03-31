@@ -19,7 +19,7 @@ class HomeController extends Controller
         return view('customer.contact');
     }
 
-    public function storeCOntact(Request $request)
+    public function storeContact(Request $request)
     {
         $request->validate(
             [
@@ -74,6 +74,6 @@ class HomeController extends Controller
 
         $user = User::find($id);
         $user->update($request->all());
-        return redirect()->route('user.profile')->with('success', 'Profil berhasil diupdate');
+        return redirect()->route('customer.profile')->with('success', 'Profil berhasil diupdate');
     }
 }

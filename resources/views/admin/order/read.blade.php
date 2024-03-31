@@ -36,7 +36,7 @@
                             <td>{{ $order->total }}</td>
                             <td>{{ $order->address }}</td>
                             <td>{{ $order->status }}</td>
-                            <td><a href="{{ route('admin.order.edit', ['order'=>$order->id])}}" class="btn btn-primary rounded-pill px-3"><i class="bx bx-edit-alt"></i></a></td>
+                            <td><a href="{{ route('admin.order.edit', ['order'=>$order->id])}}" class="btn btn-success rounded-pill px-3"><i class="bx bx-edit-alt"></i></a></td>
                             <td><a href="{{ route('admin.order.delete', ['order'=>$order->id])}}" class="btn btn-danger rounded-pill px-3"><i class="bx bxs-eraser"></i></a></td>
                         </tr>
                         @empty

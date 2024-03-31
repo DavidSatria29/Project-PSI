@@ -28,6 +28,14 @@
                         <input type="text" class="form-control" id="type" name="type" value="{{ old('type') }}">
                     </div>
                     <div class="mb-3">
+                        <label for="size" class="form-label">Size</label>
+                        <input type="text" class="form-control" id="size" name="size" value="{{ old('size') }}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="color" class="form-label">Color</label>
+                        <input type="text" class="form-control" id="color" name="color" value="{{ old('color') }}">
+                    </div>
+                    <div class="mb-3">
                         <label for="price" class="form-label">Price</label>
                         <input type="number" class="form-control" id="price" name="price" value="{{ old('price') }}">
                     </div>

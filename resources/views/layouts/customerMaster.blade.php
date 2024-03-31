@@ -23,7 +23,7 @@
       <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
         <div class="container">
-          <a class="navbar-brand" style="color: #12498C" href="{{ route('user.home') }}">CERAMIC DINOYO</a>
+          <a class="navbar-brand" style="color: #12498C" href="{{ route('customer.home') }}">CERAMIC DINOYO</a>
   
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" style="color: #12498C"></i></span>
@@ -32,11 +32,11 @@
           <div class="collapse navbar-collapse" id="navbarsFurni">
             <ul class="custom-navbar-nav navbar-nav ms-auto ">
               <li class="nav-item @yield('home')">
-                <a class="nav-link" href="{{ route('user.home') }}">Home</a>
+                <a class="nav-link" href="{{ route('customer.home') }}">Home</a>
               </li>
-              <li class="nav-item @yield('commerce')"><a class="nav-link" href="{{ route('user.commerce') }}">E-Commerce</a></li>
-              <li class="nav-item @yield('tourist')"><a class="nav-link" href="{{ route('user.tourist') }}">Pariwisata</a></li>
-              <li class="nav-item @yield('contact')"><a class="nav-link" href="{{ route('user.contact') }}">Kontak</a></li>
+              <li class="nav-item @yield('commerce')"><a class="nav-link" href="{{ route('customer.commerce') }}">E-Commerce</a></li>
+              <li class="nav-item @yield('tourist')"><a class="nav-link" href="{{ route('customer.tourist') }}">Pariwisata</a></li>
+              <li class="nav-item @yield('contact')"><a class="nav-link" href="{{ route('customer.contact') }}">Kontak</a></li>
             </ul>
 			<ul class="navbar-nav ms-auto mx-auto custom-navbar-nav">
                   <!-- Authentication Links -->
@@ -53,8 +53,8 @@
                           </li>
                       @endif
                   @else
-				    	<li><a class="nav-link" style="color: #12498C" href="{{ route('user.profile') }}"><i class="fa-solid fa-user"></i></a></li>
-              			<li><a class="nav-link" style="color: #12498C" href="{{ route('user.cart') }}"><i class="fa-solid fa-cart-shopping"></i></a></li>
+				    	<li><a class="nav-link" style="color: #12498C" href="{{ route('customer.profile') }}"><i class="fa-solid fa-user"></i></a></li>
+              			<li><a class="nav-link" style="color: #12498C" href="{{ route('customer.cart') }}"><i class="fa-solid fa-cart-shopping"></i></a></li>
                       <li class="nav-item dropdown">
                           <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                               Selamat Datang, {{ Auth::user()->name }}
@@ -190,10 +190,16 @@
 		</footer>
 		<!-- End Footer Section -->	
 
-
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    	{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> --}}
+    	<script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
+    	<script src="https://cdn.datatables.net/2.0.1/js/dataTables.bootstrap5.js"></script>
 		<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 		<script src="{{ asset('assets/js/tiny-slider.js') }}"></script>
 		<script src="{{ asset('assets/js/custom.js') }}"></script>
+		<script>
+			new DataTable('#cart-table');
+		</script>
 		@include('sweetalert::alert')
 </body>
 </html>

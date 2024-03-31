@@ -152,6 +152,18 @@
                 <div data-i18n="Contact">Contact</div>
               </a>
             </li>
+            <li class="menu-item @yield('payment_method')">
+              <a href="{{ route('admin.payment_method.show') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-money"></i>
+                <div data-i18n="Method">Payment Method</div>
+              </a>
+            </li>
+            <li class="menu-item @yield('payment_confirmation')">
+              <a href="{{ route('admin.payment_confirmation.show') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-badge-check"></i>
+                <div data-i18n="Confirmation">Payment Confirmation</div>
+              </a>
+            </li>
           </ul>
         </aside>
         <!-- / Menu -->
@@ -327,6 +339,8 @@
             new DataTable('#reservation-table');
             new DataTable('#review-table');
             new DataTable('#contact-table');
+            new DataTable('#payment_method-table');
+            new DataTable('#payment_confirmation-table');
 
     </script>
     @include('sweetalert::alert')

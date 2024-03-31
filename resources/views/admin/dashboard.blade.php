@@ -92,6 +92,24 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-between p-4 text-white">
+                            <i class="menu-icon tf-icons bx bx-money bx-lg"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">Total Metode</p>
+                                <h6 class="mb-0 text-white">{{ $payment_method }}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-between p-4 text-white">
+                            <i class="menu-icon tf-icons bx bx-badge-check bx-lg"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">Total Konfirmasi</p>
+                                <h6 class="mb-0 text-white">{{ $payment_confirmation }}</h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 @endsection

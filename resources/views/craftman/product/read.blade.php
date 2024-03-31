@@ -22,6 +22,8 @@
                             <th>ID</th>
                             <th>Nama</th>
                             <th>Tipe</th>
+                            <th>Ukuran</th>
+                            <th>Warna</th>
                             <th>Harga</th>
                             <th>Stok</th>
                             <th>Gambar</th>
@@ -36,11 +38,13 @@
                             <td>{{ $product->id }}</td>
                             <td>{{ $product->name }}</td>
                             <td>{{ $product->type }}</td>
+                            <td>{{ $product->size }}</td>
+                            <td>{{ $product->color }}</td>
                             <td>{{ $product->price }}</td>
                             <td>{{ $product->stock }}</td>
                             <td><img src="{{asset('assets/img/products/'.$product->image)  }}" alt="Product Image" style="max-width: 40px;"></td>
                             <td><a href="{{route('craftman.product.edit', ['product'=>$product->id])}}" class="btn btn-success rounded-pill px-3"><i class="bx bx-edit-alt"></i></a></td>
-                            <td><a href="{{route('craftman.product.delete', ['product'=>$product->id])}}" class="btn btn-success rounded-pill px-3"><i class="bx bxs-eraser"></i></a></td>
+                            <td><a href="{{route('craftman.product.delete', ['product'=>$product->id])}}" class="btn btn-danger rounded-pill px-3"><i class="bx bxs-eraser"></i></a></td>
                         </tr>
                         @empty
                         <tr>

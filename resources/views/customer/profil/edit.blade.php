@@ -5,7 +5,7 @@
         <div class="col-sm-6">
             <div class="rounded h-100 p-4">
                 <h6 class="mb-4 text-center">Edit Form Profil</h6>
-                <form action="{{ route('user.updateProfile',['id'=>$user->id]) }}" method="POST" class="">
+                <form action="{{ route('customer.updateProfile',['id'=>$user->id]) }}" method="POST" class="">
                     @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label">Nama</label>

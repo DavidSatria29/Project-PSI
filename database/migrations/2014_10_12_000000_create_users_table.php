@@ -17,10 +17,9 @@ return new class extends Migration
             $table->string('alias')->nullable();
             $table->string('email')->unique();
             $table->string('password');
-            $table->enum('role', ['admin', 'user', 'craftman'])->default('user');
+            $table->enum('role', ['admin', 'customer', 'craftman'])->default('customer');
             $table->string('address')->nullable();
             $table->string('phone')->nullable();
-            $table->timestamp('register_at')->useCurrent();
             $table->timestamps();
         });
     }

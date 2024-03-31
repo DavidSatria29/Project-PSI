@@ -18,8 +18,12 @@
                             <th>NO</th>
                             <th>ID</th>
                             <th>Nama</th>
+                            <th>Tipe</th>
+                            <th>Warna</th>  
                             <th>Amount</th>
+                            <th>Price</th>
                             <th>Description</th>
+                            <td>Status</td>
                             <th>Gambar</th>
                             <th>Edit</th>
                             <th>Delete</th>
@@ -33,9 +37,13 @@
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $custom_product->user_id }}</td>
                             <td>{{ $custom_product->name }}</td>
+                            <td>{{ $custom_product->type }}</td>
+                            <td>{{ $custom_product->color }}</td>
                             <td>{{ $custom_product->amount }}</td>
+                            <td>{{ $custom_product->price }}</td>
                             <td>{{ $custom_product->description }}</td>
-                            <td><img src="{{ $custom_product->image }}" alt="Product Image" style="max-width: 100px;"></td>
+                            <td>{{ $custom_product->status }}</td>
+                            <td><img src="{{ asset('assets/img/custom_products/'.$custom_product->image)   }}" alt="Product Image" style="max-width: 100px;"></td>
                             <td><a href="{{ route('admin.custom_product.edit', ['custom_product'=>$custom_product->id]) }}" class="btn btn-success rounded-pill px-3"><i class="bx bx-edit-alt"></i></a></td>
                             <td><a href="{{ route('admin.custom_product.delete', ['custom_product'=>$custom_product->id])}}" class="btn btn-danger rounded-pill px-3"><i class="bx bxs-eraser"></i></a></td>
                         </tr>

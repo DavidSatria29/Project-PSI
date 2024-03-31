@@ -1,143 +1,93 @@
 @extends('layouts.CustomerMaster')
 @section('content')
 
+<style>
+  .custom-input {
+    font-size: 12px; /* Atur ukuran font */
+    padding: 0.25rem 0.5rem; /* Atur padding */
+    width: 50px; /* Atur lebar */
+}
+
+.custom-input-other {
+    font-size: 12px; /* Atur ukuran font */
+    padding: 0.25rem 0.5rem; /* Atur padding */
+    width: 100px; /* Atur lebar */
+}
+</style>
 <div class="untree_co-section before-footer-section">
-    <div class="container">
-      <div class="row mb-5">
-        <form class="col-md-12" method="post">
-          <div class="site-blocks-table" style="background-color: white;">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th class="product-thumbnail">Image</th>
-                  <th class="product-name">Product</th>
-                  <th class="product-price">Price</th>
-                  <th class="product-quantity">Quantity</th>
-                  <th class="product-total">Total</th>
-                  <th class="product-remove">Remove</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="product-thumbnail">
-                    <img src="images/card3.png" alt="Image" class="img-fluid">
-                  </td>
-                  <td class="product-name">
-                    <p >Topeng</p>
-                  </td>
-                  <td class="product-price">Rp.50000</td>
-                  <td class="product-quantity">
-                    <div class="input-group mb-3 align-items-center" style="max-width: 120px;">
-                      <div class="input-group-prepend">
-                        <button class="btn btn-outline-black decrease" type="button">&minus;</button>
-                      </div>
-                      <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                      <div class="input-group-append">
-                        <button class="btn btn-outline-black increase" type="button">&plus;</button>
-                      </div>
-                    </div>
-
-                  </td>
-                  <td class="product-total">Rp.50000</td>
-                  <td><a href="#" class="btn btn-primary btn-sm">X</a></td>
-                </tr>
-
-                <tr>
-                  <td class="product-thumbnail">
-                    <img src="images/keramik2.png" alt="Image" class="img-fluid">
-                  </td>
-                  <td class="product-name">
-                    <p>Vas</p>
-                  </td>
-                  <td class="product-price">Rp.100000</td>
-                  <td class="product-quantity">
-                    <div class="input-group mb-3 align-items-center  quantity-container" style="max-width: 120px;">
-                      <div class="input-group-prepend">
-                        <button class="btn btn-outline-black decrease" type="button">&minus;</button>
-                      </div>
-                      <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                      <div class="input-group-append">
-                        <button class="btn btn-outline-black increase" type="button">&plus;</button>
-                      </div>
-                    </div>
-
-                  </td>
-                  <td class="product-total">Rp.100000</td>
-                  <td><a href="#" class="btn btn-primary btn-sm">X</a></td>
-                </tr>
-              </tbody>
-            </table>
+  <div class="container px-5 container-user">
+      <div class="col-12 mt-1">
+          <div class="rounded h-100 p-4">
+              <div class="table-responsive px-5" style="background-color: white">
+                  <table id=@if($mergedData->count() > 0) "cart-table" @else "empty-table"  @endif class="table table-bordered text-center">
+                      <thead>
+                          <tr>
+                              <th>NO</th>
+                              <th>Gambar</th>
+                              <th>Nama Produk</th>
+                              <th>Harga</th>
+                              <th>Jumlah</th>
+                              <th>Total</th>
+                              <th>Update</th>
+                              <th>Delete</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          @forelse ($mergedData as $data)
+                          <tr>
+                              <td>{{ $loop->iteration }}</td>
+                              <td><img src="{{asset('assets/img/products/'.$data['image'])}}" class="" alt="Product Image" width="100px"></td>
+                              <td>{{ $data['product_name'] }}</td>
+                              <td><input type="number" class="form-control text-center form-control-sm custom-input-other mx-auto" name="price" id="Price" value="{{ old('price')??$data['price'] }}" readonly></td>
+                              <form action="{{ route('customer.cart.update') }}" method="POST">
+                                @csrf
+                                <input type="hidden" name="id" value="{{ $data['id'] }}">
+                                <td><input type="number" class="form-control text-center form-control-sm custom-input mx-auto" name="amount" id="Amount" value="{{ old('amount')??$data['amount'] }}"></td>
+                                <td><input type="number" class="form-control text-center form-control-sm custom-input-other mx-auto" name="total" id="Total" value="{{ old('total')??$data['total'] }}" readonly></td>
+                                <td><button type="submit" class="btn btn-primary px-1" id="button">Simpan</button></td>
+                              </form>
+                              <td><a href="{{ route('customer.cart.delete', ['id'=>$data['id']])}}" role="button" class="btn btn-danger rounded-pill px-2"><i class="fa fa-eraser"></i></a></td>
+                          </tr>
+                          @empty
+                          <tr>
+                              <td colspan="8" class="text-center">Data Kosong</td>
+                          </tr>
+                          @endforelse
+                      </tbody>
+                  </table>
+                  <div class="container text-center mb-2 mt-2">
+                    <a href="{{ route('customer.checkout') }}" class="btn btn-primary">Check Out</a>
+                  </div>
+              </div>
           </div>
-        </form>
       </div>
-
-      <div class="row">
-        <div class="col-md-6 pl-5">
-          <div class="row justify-content-end">
-            <div class="col-md">
-              <div class="row">
-                <div class="col-md-12 text-right border-bottom mb-5">
-                  <h3 class=" h4 text-uppercase" style="color: #12498C"><b>Cart Totals</b></h3>
-                </div>
-              </div>
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <span class="">Subtotal</span>
-                </div>
-                <div class="col-md-6 text-right">
-                  <strong class="">Rp.150000</strong>
-                </div>
-              </div>
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <span class="">Shipping</span>
-                </div>
-                <div class="col-md-6 text-right">
-                  <strong class="">Rp.0</strong>
-                </div>
-              </div>
-              <hr>
-              <div class="row mb-5">
-                <div class="col-md-6">
-                  <span class="">Total</span>
-                </div>
-                <div class="col-md-6 text-right">
-                  <strong class="">Rp.150000</strong>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-12">
-                  <button class="btn btn-primary btn-lg py-3 btn-block" onclick="window.location='checkout.html'">Proceed To Checkout</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
+</div>
 
-  <script>
-    // Function to calculate product total
-    function calculateProductTotal() {
-        // Get product price
-        var productPrice = parseFloat(document.querySelector('.product-price').textContent.replace('Rp.', '').trim());
+<script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Mendapatkan semua elemen input jumlah dan harga
+        const amountInputs = document.querySelectorAll("input[name='amount']");
+        const priceInputs = document.querySelectorAll("input[name='price']");
+        const totalInputs = document.querySelectorAll("input[name='total']");
 
-        // Get product quantity
-        var productQuantity = parseInt(document.querySelector('.quantity-amount').value);
+        // Menambahkan event listener untuk setiap input jumlah
+        amountInputs.forEach(function(input, index) {
+            input.addEventListener('input', function() {
+                // Mendapatkan nilai jumlah dari input
+                const amount = parseInt(input.value);
 
-        // Calculate product total
-        var productTotal = productPrice * productQuantity;
+                // Mendapatkan harga per barang dari input harga
+                const price = parseFloat(priceInputs[index].value);
 
-        // Display product total
-        document.querySelector('.product-total').textContent = 'Rp.' + productTotal;
-    }
+                // Menghitung total berdasarkan jumlah barang dan harga per barang
+                const total = amount * price;
 
-    // Event listener for quantity change
-    document.querySelector('.quantity-amount').addEventListener('input', calculateProductTotal);
+                // Memperbarui nilai input total
+                totalInputs[index].value = total; // Di sini menggunakan toFixed(2) untuk membatasi desimal menjadi dua angka
+            });
+        });
+    });
 
-    // Initial calculation on page load
-    calculateProductTotal();
 </script>
 @endsection
