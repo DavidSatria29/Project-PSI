@@ -58,7 +58,9 @@
             </div>
           </div>
         </div>
-
+        <div class="row justify-content-center my-4"> <!-- Added a new row for centering the button -->
+          <a href="/reservasi" class="btn btn-primary btn-lg">Reservasi Sekarang</a>
+        </div>
       </div>
     </div>
     {{-- end Workshop Keramik Section --}}

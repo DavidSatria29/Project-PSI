@@ -198,6 +198,9 @@
                 </div>
 
             </div>
+            <div class="row justify-content-center my-4"> <!-- Added a new row for centering the button -->
+                <a href="/ulasan" class="btn btn-primary btn-lg">Tambah Ulasan</a>
+              </div>
         </div>
     </div>
     <!-- End Review Section -->

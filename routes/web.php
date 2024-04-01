@@ -64,6 +64,8 @@ Route::middleware(['auth', 'role:customer'])->group(
         Route::post('/confirmation-order-store/{id}', [CommerceController::class, 'payment_confirmation_store_orders'])->name('customer.confirmation.store.orders');
         Route::get('/cancel-order/{id}', [CommerceController::class, 'cancel_orders'])->name('customer.cancel.orders');
         Route::get('/detail-order/{id}', [CommerceController::class, 'detail_orders'])->name('customer.detail.orders');
+
+        //reservation
     }
 );
 Route::get('/', [HomeController::class, 'index'])->name('customer.home');
@@ -176,9 +178,12 @@ Route::middleware(['auth', 'role:craftman'])->group(function () {
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/reservasi', function () {
+    return view('customer.Form.reservation');
+});
+Route::get('/ulasan', function () {
+    return view('customer.Form.review');
+});
 Route::get('/cart2', function () {
     return view('customer.cart');
-});
-Route::get('/gelas', function () {
-    return view('customer.gelas');
 });
