@@ -15,6 +15,8 @@ use App\Http\Controllers\Admin\CartController;
 use App\Http\Controllers\Admin\ReservationController;
 use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\ReviewController;
+use App\Http\Controllers\Admin\PaymentMethodController;
+use App\Http\Controllers\Admin\PaymentConfirmationController;
 use App\Http\Controllers\Craftman\ReportController;
 use App\Http\Controllers\Customer\HomeController;
 use App\Http\Controllers\Customer\CommerceController;
@@ -29,21 +31,48 @@ use App\Http\Controllers\Customer\TouristController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::middleware(['auth', 'role:user'])->group(
+// Customer
+Route::middleware(['auth', 'role:customer'])->group(
     function () {
-        Route::get('/profile', [HomeController::class, 'profile'])->name('user.profile');
-        Route::get('/editProfile/{id}', [HomeController::class, 'editProfile'])->name('user.editProfile');
-        Route::post('/updateProfile/{id}', [HomeController::class, 'updateProfile'])->name('user.updateProfile');
-        Route::get('/cart', [CommerceController::class, 'cart'])->name('user.cart');
-        Route::get('/status', [CommerceController::class, 'status'])->name('user.status');
+        // profile
+        Route::get('/profile', [HomeController::class, 'profile'])->name('customer.profile');
+        Route::get('/editProfile/{id}', [HomeController::class, 'editProfile'])->name('customer.editProfile');
+        Route::post('/updateProfile/{id}', [HomeController::class, 'updateProfile'])->name('customer.updateProfile');
+
+        // cart
+        Route::get('/cart', [CommerceController::class, 'show_cart'])->name('customer.cart');
+        Route::get('/cart/{id}', [CommerceController::class, 'delete_cart'])->name('customer.cart.delete');
+        Route::get('/add_to_cart/{id}', [CommerceController::class, 'add_to_cart'])->name('customer.add_to_cart');
+        route::post('/update_cart', [CommerceController::class, 'update_cart'])->name('customer.cart.update');
+        Route::get('/checkout', [CommerceController::class, 'checkout'])->name('customer.checkout');
+
+
+        // Product
+        Route::get('/glass_products', [CommerceController::class, 'glass_products'])->name('customer.glass_products');
+        Route::get('/vase_products', [CommerceController::class, 'vase_products'])->name('customer.vase_products');
+        Route::get('/decoration_products', [CommerceController::class, 'decoration_products'])->name('customer.decoration_products');
+        Route::get('/utensil_products', [CommerceController::class, 'utensil_products'])->name('customer.utensil_products');
+        Route::get('/other_products', [CommerceController::class, 'other_products'])->name('customer.other_products');
+        Route::get('/custom_products_create', [CommerceController::class, 'custom_products_create'])->name('customer.custom_products.create');
+        Route::post('/custom_products_store', [CommerceController::class, 'custom_products_store'])->name('customer.custom_products.store');
+
+        // order
+        Route::get('/status', [CommerceController::class, 'status_orders'])->name('customer.status.orders');
+        Route::get('/payment-order/{id}', [CommerceController::class, 'payment_orders'])->name('customer.payment.orders');
+        Route::post('/payment-order-update/{id}', [CommerceController::class, 'payment_update_orders'])->name('customer.payment.update.orders');
+        Route::get('/confirmation-order/{id}', [CommerceController::class, 'payment_confirmation_orders'])->name('customer.confirmation.orders');
+        Route::post('/confirmation-order-store/{id}', [CommerceController::class, 'payment_confirmation_store_orders'])->name('customer.confirmation.store.orders');
+        Route::get('/cancel-order/{id}', [CommerceController::class, 'cancel_orders'])->name('customer.cancel.orders');
+        Route::get('/detail-order/{id}', [CommerceController::class, 'detail_orders'])->name('customer.detail.orders');
     }
 );
-Route::get('/', [HomeController::class, 'index'])->name('user.home');
-Route::get('/contact', [HomeController::class, 'contact'])->name('user.contact');
-Route::post('/storeContact', [HomeController::class, 'storeCOntact'])->name('user.storeContact');
-Route::get('/commerce', [CommerceController::class, 'index'])->name('user.commerce');
-Route::get('/tourist', [TouristController::class, 'index'])->name('user.tourist');
+Route::get('/', [HomeController::class, 'index'])->name('customer.home');
+Route::get('/contact', [HomeController::class, 'contact'])->name('customer.contact');
+Route::post('/storeContact', [HomeController::class, 'storeContact'])->name('customer.storeContact');
+Route::get('/commerce', [CommerceController::class, 'index'])->name('customer.commerce');
+Route::get('/tourist', [TouristController::class, 'index'])->name('customer.tourist');
+
+// Admin
 Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::prefix('admin')->group(function () {
         Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
@@ -99,9 +128,25 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
         #review
         Route::get('/review', [ReviewController::class, 'index'])->name('admin.review.show');
         Route::get('/review-delete/{review}', [ReviewController::class, 'delete'])->name('admin.review.delete');
+
+        #payment method
+        Route::get('/paymentMethod', [PaymentMethodController::class, 'index'])->name('admin.payment_method.show');
+        Route::get('/paymentMethod-create', [PaymentMethodController::class, 'create'])->name('admin.payment_method.create');
+        Route::post('/paymentMethod-store', [PaymentMethodController::class, 'store'])->name('admin.payment_method.store');
+        Route::get('/paymentMethod-edit/{payment_method}', [PaymentMethodController::class, 'edit'])->name('admin.payment_method.edit');
+        Route::post('/paymentMethod-update/{payment_method}', [PaymentMethodController::class, 'update'])->name('admin.payment_method.update');
+        Route::get('/paymentMethod-delete/{payment_method}', [PaymentMethodController::class, 'delete'])->name('admin.payment_method.delete');
+
+        #payment confirmation
+        Route::get('/paymentConfirmation', [PaymentConfirmationController::class, 'index'])->name('admin.payment_confirmation.show');
+        Route::get('/paymentConfirmation-edit/{payment_confirmation}', [PaymentConfirmationController::class, 'edit'])->name('admin.payment_confirmation.edit');
+        Route::post('/paymentConfirmation-update/{payment_confirmation}', [PaymentConfirmationController::class, 'update'])->name('admin.payment_confirmation.update');
+        Route::get('/paymentConfirmation-delete/{payment_confirmation}', [PaymentConfirmationController::class, 'delete'])->name('admin.payment_confirmation.delete');
     });
 });
 
+
+// Craftman
 Route::middleware(['auth', 'role:craftman'])->group(function () {
     Route::prefix('craftman')->group(function () {
         Route::get('/dashboard', [CraftmanDashboardController::class, 'index'])->name('craftman.dashboard');

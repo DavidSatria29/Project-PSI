@@ -61,9 +61,11 @@ class CustomProductController extends Controller
     {
         $request->validate(
             [
+                'price' => 'required|integer',
                 'status' => 'required|string|max:255',
             ],
             [
+                'price.required' => 'Harga harus diisi',
                 'status.required' => 'Status harus diisi',
             ]
         );
@@ -73,6 +75,7 @@ class CustomProductController extends Controller
 
         // Melakukan update data produk
         $custom_product->update([
+            'price' => $request->price,
             'status' => $request->status,
         ]);
 

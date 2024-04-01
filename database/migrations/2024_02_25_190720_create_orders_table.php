@@ -14,14 +14,13 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users');
-            $table->foreignId('cart_id')->constrained('carts');
-            $table->decimal('total', 10, 2);
-            $table->string('address');
-            $table->enum('status', ['pending_payment', 'completed', 'shipped', 'delivered', 'canceled'])->default('pending_payment');
-            $table->enum('payment_method', ['BCA', 'BRI', 'OVO', 'GOPAY', 'DANA', 'ShopeePay', 'COD']);
+            $table->foreignId('category_id')->constrained('categories');
             $table->string('product_details');
             $table->string('amount_details');
-            $table->timestamp('order_at')->useCurrent();
+            $table->integer('total');
+            $table->string('address')->nullable();
+            $table->enum('status', ['Menunggu Pembayaran', 'Menunggu Konfirmasi Pembayaran', 'Menunggu Konfirmasi Admin', 'Diproses', 'Dikirim', 'Selesai', 'Dibatalkan'])->default('Menunggu Pembayaran');
+            $table->enum('payment_method', ['BCA', 'BNI', 'BRI', 'OVO', 'GOPAY', 'DANA', 'ShopeePay', 'COD'])->nullable();
             $table->timestamps();
         });
     }

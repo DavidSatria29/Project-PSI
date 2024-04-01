@@ -10,12 +10,12 @@
         </div>
         <div class="row align-items-center pt-5"> <!-- Added align-items-center class here -->
             <div class="d-grid gap-2 d-md-block text-center" role="group" aria-label="Basic outlined example">
-                <a href="{{ route('user.commerce') }}" type="button" class="btn btn-outline-primary p-5"><i class="fas fa-wine-glass fa-5x"></i><br>Gelas</a>
-                <a href="{{ route('user.commerce') }}" type="button" class="btn btn-outline-primary p-5"><i class="fa-solid fa-whiskey-glass fa-5x"></i><br>Vas</a>
-                <a href="{{ route('user.commerce') }}" type="button" class="btn btn-outline-primary p-5"><i class="fa-solid fa-utensils fa-5x"></i><br>Alat Makan</a>
-                <a href="{{ route('user.commerce') }}" type="button" class="btn btn-outline-primary p-5"><i class="fas fa-snowman fa-5x"></i><br>Hiasan</a>
-                <a href="{{ route('user.commerce') }}" type="button" class="btn btn-outline-primary p-5"><i class="fas fa-file-alt fa-5x"></i><br>Custom</a>
-                <a href="{{ route('user.commerce') }}" type="button" class="btn btn-outline-primary p-5"><i class="fa-solid fa-palette fa-5x"></i><br>Lain-lain</a>
+                <a href="{{ route('customer.glass_products') }}" type="button" class="btn btn-outline-primary p-5"><i class="fas fa-wine-glass fa-5x"></i><br>Gelas</a>
+                <a href="{{ route('customer.vase_products') }}" type="button" class="btn btn-outline-primary p-5"><i class="fa-solid fa-whiskey-glass fa-5x"></i><br>Vas</a>
+                <a href="{{ route('customer.utensil_products') }}" type="button" class="btn btn-outline-primary p-5"><i class="fa-solid fa-utensils fa-5x"></i><br>Alat Makan</a>
+                <a href="{{ route('customer.decoration_products') }}" type="button" class="btn btn-outline-primary p-5"><i class="fas fa-snowman fa-5x"></i><br>Hiasan</a>
+                <a href="{{ route('customer.custom_products.create') }}" type="button" class="btn btn-outline-primary p-5"><i class="fas fa-file-alt fa-5x"></i><br>Custom</a>
+                <a href="{{ route('customer.other_products') }}" type="button" class="btn btn-outline-primary p-5"><i class="fa-solid fa-palette fa-5x"></i><br>Lain-lain</a>
               </div>
 
         </div>

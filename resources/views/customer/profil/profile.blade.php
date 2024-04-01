@@ -3,7 +3,7 @@
 
 <div class="section beta default_h">
     <div class="container d-flex justify-content-center mt-2">
-      <div class="card" style="width: 35rem;">
+      <div class="card" style="width: 40rem;">
         <div class="card-body">
           <h5 class="card-title text-center">Profil</h5>
           <div class="container">
@@ -25,8 +25,9 @@
             </div>
           </div>
           <div class="mt-2 text-center">
-            <a href="{{ route('user.editProfile',['id'=>$user->id]) }}" class="btn btn-primary">Edit Profil</a>
-            <a href="{{ route('user.status') }}" class="btn btn-primary">Status Order</a>
+            <a href="{{ route('customer.editProfile',['id'=>$user->id]) }}" class="btn btn-primary">Ubah Profil</a>
+            <a href="{{ route('customer.status.orders') }}" class="btn btn-primary">Status Pemesanan</a>
+            <a href="" class="btn btn-primary">Riwayat Pemesanan</a>
           </div>
         </div>
       </div>

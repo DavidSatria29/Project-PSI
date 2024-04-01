@@ -8,7 +8,7 @@
 			<h1 class="text-center" style="color: #12498C"><b>KONTAK</b></h1>
 			
 			<div class="col">
-				<form class="row g-3 py-3 px-5" method="POST" action="{{ route('user.storeContact') }}">
+				<form class="row g-3 py-3 px-5" method="POST" action="{{ route('customer.storeContact') }}">
 					@csrf
 					<div class="col-md-4">
 					  <label for="inputname" class="form-label"><b>Name</b></label>

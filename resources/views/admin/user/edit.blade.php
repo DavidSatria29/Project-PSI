@@ -24,7 +24,11 @@
                         <input type="text" class="form-control" id="alias" name="alias" value="{{ old('alias') ?? $user->alias }}">
                     <div class="mb-3">
                         <label for="role" class="form-label">Role</label>
-                        <input type="text" class="form-control" id="role" name="role" value="{{ old('role') ?? $user->role }}">
+                        <select name="role" id="role" class="form-control">
+                            <option">{{ old('role') ?? $user->role }}</option>
+                            <option value="admin">Admin</option>
+                            <option value="craftman">craftman</option>
+                        </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Kirim</button>
                 </form>

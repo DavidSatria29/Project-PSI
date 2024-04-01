@@ -13,6 +13,8 @@ use App\Models\Order;
 use App\Models\Reservation;
 use App\Models\Review;
 use App\Models\Contact;
+use App\Models\PaymentConfirmation;
+use App\Models\PaymentMethod;
 
 class DashboardController extends Controller
 {
@@ -27,7 +29,9 @@ class DashboardController extends Controller
         $reservation = Reservation::all()->count();
         $review = Review::all()->count();
         $contact = Contact::all()->count();
-        return view('admin.dashboard', compact('user', 'category', 'product', 'custom_product', 'cart', 'order', 'reservation', 'review', 'contact'));
+        $payment_confirmation = PaymentConfirmation::all()->count();
+        $payment_method = PaymentMethod::all()->count();
+        return view('admin.dashboard', compact('user', 'category', 'product', 'custom_product', 'cart', 'order', 'reservation', 'review', 'contact', 'payment_confirmation', 'payment_method'));
     }
     public function test()
     {

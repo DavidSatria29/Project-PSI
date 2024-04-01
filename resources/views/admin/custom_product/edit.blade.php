@@ -11,30 +11,22 @@
 <div class="container-fluid pt-4 px-4 container-user">
     <div class="row g-4">
         <div class="col-sm-12">
-            <div class=" bg-secondary roundedrounded h-100 p-4">
-                <h6 class="mb-4">Create Form Custom Product</h6>
+            <div class="rounded h-100 p-4">
+                <h6 class="mb-4">Update Form Custom Product</h6>
                 <form action="{{ route('admin.custom_product.update', ['custom_product'=>$custom_product->id])}}" method="POST">
                     @csrf
-                    <input type="hidden" name="category_id" value="{{$custom_product->category_id}}">
-                    <input type="hidden" name="user_id" value="{{$custom_product->user_id}}">
                     <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input name="name" value="{{$custom_product->name}}" type="text" class="form-control" id="name" name="name" value="{{ old('name') }}">
+                        <label for="price" class="form-label">Harga</label>
+                        <input name="price" value="{{ old('price')?? $custom_product->price }}" type="number" class="form-control" id="price" name="price"">
                     </div>
                     <div class="mb-3">
-                        <label for="amount" class="form-label">Amount</label>
-                        <input name="amount" value="{{$custom_product->amount}}" type="number" class="form-control" id="name" name="name" value="{{ old('amount') }}">
+                        <label for="status" class="form-label">Status</label>
+                        <select name="status" id="status" class="form-control">
+                            <option>{{ old('status') ?? $custom_product->status }}</option>
+                            <option value="aproved">Aproved</option>
+                            <option value="rejected">Rejected</option>
+                        </select>
                     </div>
-                    <div class="mb-3">
-                        <label for="description" class="form-label">Description</label>
-                        <input name="description" value="{{$custom_product->description}} " type="text" class="form-control" id="type" name="type" value="{{ old('description') }}">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="image" class="form-label">Image URL</label>
-                        <input name="image" value="{{$custom_product->image}}" type="text" class="form-control" id="image" name="image" value="{{ old('image') }}">
-                    </div>
-
                     <button type="submit" class="btn btn-primary">Kirim</button>
                 </form>
             </div>

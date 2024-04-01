@@ -16,8 +16,12 @@ return new class extends Migration
             $table->foreignId('category_id')->constrained('categories');
             $table->foreignId('user_id')->constrained('users');
             $table->string('name');
-            $table->integer('amount');
+            $table->string('type')->nullable();
+            $table->string('size')->nullable();
+            $table->string('color')->nullable();
             $table->text('description');
+            $table->integer('amount');
+            $table->integer('price')->nullable();
             $table->string('image');
             $table->enum('status', ['pending', 'approved', 'rejected'])->default('pending');
             $table->timestamps();

@@ -28,10 +28,10 @@
                         <tr>
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $cart->product_name }}</td>
-                            <td>{{ $cart->quantity }}</td>
+                            <td>{{ $cart->amount }}</td>
                             <td>{{ $cart->total }}</td>
                             <td>{{ $cart->status }}</td>
-                            <td><a href="{{ route('admin.cart.delete', ['cart'=>$cart->id])}}" class="btn btn-danger rounded-pill px-3"><i class="fa fa-pen"></i>Delete</a></td>
+                            <td><a href="{{ route('admin.cart.delete', ['cart'=>$cart->id])}}" class="btn btn-danger rounded-pill px-3"><i class="bx bxs-eraser"></i></a></td>
                         </tr>
                         @empty
                         <tr>
