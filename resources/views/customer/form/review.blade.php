@@ -16,8 +16,8 @@
                                 <input type="text" class="form-control" id="name" name="name" required>
                             </div>
                             <div class="form-group">
-                                <label for="workshop">Jenis Workshop:</label>
-                                <input type="text" class="form-control" id="workshop" name="workshop" required>
+                                <label for="produk">Jenis produk:</label>
+                                <input type="text" class="form-control" id="produk" name="produk" required>
                             </div>
                             <div class="form-group">
                                 <label for="message">Pesan:</label>
