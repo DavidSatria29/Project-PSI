@@ -9,19 +9,11 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-md">
-                        <form action="{{ route('customer.review.store') }}" method="POST">
+                        <form action="{{ route('reservation.store') }}" method="POST">
                             @csrf
-                            <div class="form-group">
-                                <label for="user_id">User ID:</label>
-                                <input type="number" class="form-control" id="user_id" name="user_id" required>
-                            </div>
                             <div class="form-group">
                                 <label for="name">Nama:</label>
                                 <input type="text" class="form-control" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="produk">Jenis produk:</label>
-                                <input type="text" class="form-control" id="produk" name="produk" required>
                             </div>
                             <div class="form-group">
                                 <label for="product_id">Product ID:</label>
@@ -43,7 +35,7 @@
                                 <label for="comment">Comment:</label>
                                 <textarea class="form-control" id="comment" name="comment" rows="5" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-light mt-2">Kirim</button>
+                            <button type="submit" class="btn btn-light mt-2">Submit</button>
                         </form>
                     </div>
                 </div>

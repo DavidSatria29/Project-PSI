@@ -14,4 +14,15 @@ class Reservation extends Model
     {
         return $this->belongsTo(User::class);
     }
+    protected $fillable = [
+        'user_id',
+        'name',
+        'email',
+        'phone',
+        'address',
+        'city',
+        'workshop_type',
+        'date',
+        'status'
+    ];
 }
