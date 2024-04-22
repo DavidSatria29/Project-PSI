@@ -8,7 +8,7 @@
         <div class="row align-items-center">
             <h1 class="section-title text-center" style="color: #12498C"><b>SEJARAH</b></h1>
             <div class="col-lg-5">
-                <div class="img-wrap">
+                <div class="img-wrap" data-aos="flip-left">
                     <img src="images/keramik2.png" alt="Image" class="img-fluid">
                     <div class="circle" style="background-color: #12498C ;z-index: -1;"></div>
 

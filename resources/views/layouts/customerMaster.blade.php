@@ -16,6 +16,7 @@
 	<link href="{{ asset('assets/css/tiny-slider.css') }}" rel="stylesheet">
 	<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<title>SIDIKAR</title>
 </head>
 <body>
@@ -95,13 +96,15 @@
        <div class="hero">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-md-5">
-                    <div class="intro-excerpt">
+                <div class="col-md-5" data-aos="fade-right">
+                    <div class="intro-except">
                         <h1>Kampung Wisata <span clsas="d-block">Keramik Dinoyo</span></h1>
-                        <p class="mb-4">Kampung Wisata Keramik Dinoyo merupakan destinasi wisata yang berada di Kota Malang.</p>                        <p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
+                        <p class="mb-4">Kampung Wisata Keramik Dinoyo merupakan destinasi wisata yang berada di Kota Malang.</p>                        
+						<p><a href="{{ route('customer.commerce') }}" class="btn btn-secondary me-2">Shop Now</a>
+						<a href="{{ route('customer.tourist') }}" class="btn btn-white-outline">Explore</a></p>
                     </div>
                 </div>
-                <div class="col-md-7" style="align-content: center">
+                <div class="col-md-7" style="align-content: center" data-aos="fade-left">
                     <div class="hero-img-wrap" style="display: flex; justify-content: flex-end">
                         <img src="{{ asset('images/Keramikdummy.png') }}" class="img-fluid">
                     </div>
@@ -201,6 +204,10 @@
 		<script>
 			new DataTable('#cart-table');
 		</script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		  </script>
 		@include('sweetalert::alert')
 </body>
 </html>

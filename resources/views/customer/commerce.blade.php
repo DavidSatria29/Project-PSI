@@ -6,7 +6,7 @@
     <div class="section beta default_h">
       <div class="container pt-4 pb-4">
         <div class="row align-items-center"> <!-- Added align-items-center class here -->
-          <h1 class="text-center" style="color: #12498C"><b>Produk</b></h1>
+          <h1 class="text-center" style="color: #12498C"><b>PRODUK</b></h1>
         </div>
         <div class="row align-items-center pt-5"> <!-- Added align-items-center class here -->
             <div class="d-grid gap-2 d-md-block text-center" role="group" aria-label="Basic outlined example">
@@ -27,7 +27,7 @@
     <div class="section beta default_h">
       <div class="container py-4">
         <div class="row align-items-center" style="min-height: 50vh">
-          <h1 class="text-center" style="color: #12498C"><b>Metode Pembayaran</b></h1>         
+          <h1 class="text-center" style="color: #12498C;"><b>METODE PEMBAYARAN</b></h1>         
             <div class="card">
               <div class="card-body justify-content" style="min-height: 200px">
                 <img src="images/Visa.png" class="mx-5 my-3 img-fluid" style="max-height: 5vh; " alt="">
