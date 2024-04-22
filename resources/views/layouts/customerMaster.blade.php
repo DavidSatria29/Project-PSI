@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <div class="col-md-7" style="align-content: center">
-                    <div class="hero-img-wrap">
+                    <div class="hero-img-wrap" style="display: flex; justify-content: flex-end">
                         <img src="{{ asset('images/Keramikdummy.png') }}" class="img-fluid">
                     </div>
                 </div>
