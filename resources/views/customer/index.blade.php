@@ -6,7 +6,7 @@
 <div class="why-choose-section">
     <div class="container">
         <div class="row align-items-center">
-            <h1 class="section-title text-center" style="color: #12498C"><b>SEJARAH</b></h1>
+            <h1 class="section-title text-center" style="color: #12498C" data-aos="fade-down"><b>SEJARAH</b></h1>
             <div class="col-lg-5">
                 <div class="img-wrap" data-aos="flip-left">
                     <img src="images/keramik2.png" alt="Image" class="img-fluid">
@@ -14,7 +14,7 @@
 
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left">
                 <p>
                     Sejarah Kampung Keramik Dinoyo berakar pada Kerajaan Kanjuruhan, yang terkenal dengan keahliannya dalam membuat gerabah. Seiring waktu, teknik pembuatan keramik berkembang dan kampung ini menjadi pusat industri keramik di Malang.
                     Yang membuat Kampung Keramik Dinoyo begitu istimewa adalah keasliannya. Berjalan di sepanjang gang-gang sempit, Anda akan melihat rumah-rumah tradisional dengan tungku pembakaran keramik di halamannya.
@@ -34,12 +34,12 @@
 <div class="why-choose-section">
     <div class="container">
         <div class="row align-items-center">
-            <h1 class="text-center" style="color: #12498C"><b>LOKASI DAN JAM OPERASIONAL</b></h1>
+            <h1 class="text-center" style="color: #12498C" data-aos="fade-down"><b>LOKASI DAN JAM OPERASIONAL</b></h1>
             <div class="col-lg-6">
-                <h3 class="text-center align-middle">SENIN - MINGGU <br>08.00 - 15.00</h3>
+                <h3 class="text-center align-middle" data-aos="fade-right">SENIN - MINGGU <br>08.00 - 15.00</h3>
             </div>
             <div class="col-lg-5">
-                <div class="img-wrap">
+                <div class="img-wrap" data-aos="flip-left">
                     <img src="images/peta.png" alt="Image" class="img-fluid">
                 </div>
             </div>
@@ -52,10 +52,10 @@
 <div class="popular-product">
     <div class="container">
         <div class="row justify-content-between">
-            <h1 class="section-title text-center" style="color: #12498C"><b>FASILITAS</b></h1>
+            <h1 class="section-title text-center" style="color: #12498C" data-aos="fade-down"><b>FASILITAS</b></h1>
 
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0"data-aos="fade-right">
                     <div class="product-item-sm d-flex">
                         <div class="thumbnail">
                             <img src="images/dummy.png" alt="Image" class="img-fluid">
@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade-right">
                     <div class="product-item-sm d-flex">
                         <div class="thumbnail">
                             <img src="images/dummy.png" alt="Image" class="img-fluid">
@@ -81,7 +81,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0"data-aos="fade-right">
                     <div class="product-item-sm d-flex">
                         <div class="thumbnail">
                             <img src="images/dummy.png" alt="Image" class="img-fluid">
@@ -94,7 +94,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0"data-aos="fade-right">
                     <div class="product-item-sm d-flex">
                         <div class="thumbnail">
                             <img src="images/dummy.png" alt="Image" class="img-fluid">
@@ -107,7 +107,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0"data-aos="fade-right">
                     <div class="product-item-sm d-flex">
                         <div class="thumbnail">
                             <img src="images/dummy.png" alt="Image" class="img-fluid">
@@ -120,7 +120,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0"data-aos="fade-right">
                     <div class="product-item-sm d-flex">
                         <div class="thumbnail">
                             <img src="images/dummy.png" alt="Image" class="img-fluid">
@@ -142,17 +142,17 @@
 <div class="blog-section">
     <div class="container">
         <div class="row mb-5">
-            <h1 class="section-title text-center" style="color: #12498C"><b>REVIEW</b></h1>
+            <h1 class="section-title text-center" style="color: #12498C"data-aos="fade-down"><b>REVIEW</b></h1>
             <div class="col-md-6">
             </div>
-            <div class="col-md-6 text-start text-md-end">
+            <div class="col-md-6 text-start text-md-end" data-aos="fade-left">
                 <a href="#" class="more">View All Posts</a>
             </div>
         </div>
 
         <div class="row">
 
-            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0"data-aos="flip-right">
                 <div class="post-entry">
                     <a href="#" class="post-thumbnail">
                         <div class="card" style="width: 18rem;">
@@ -167,7 +167,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0" data-aos="flip-right">
                 <div class="post-entry">
                     <a href="#" class="post-thumbnail">
                         <div class="card" style="width: 18rem;">
@@ -182,7 +182,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0" data-aos="flip-right">
                 <div class="post-entry">
                     <a href="#" class="post-thumbnail">
                         <div class="card" style="width: 18rem;">
@@ -198,11 +198,11 @@
             </div>
 
         </div>
-        <div class="row justify-content-center my-4"> <!-- Added a new row for centering the button -->
+        <div class="row justify-content-center my-4" data-aos="fade-right"> <!-- Added a new row for centering the button -->
             <a href="/ulasan" class="btn btn-primary btn-lg">Tambah Ulasan</a>
         </div>
 
-        <div class="row justify-content-center my-4"> <!-- Added a new row for centering the button -->
+        <div class="row justify-content-center my-4" data-aos="fade-right"> <!-- Added a new row for centering the button -->
             <a href="{{ route('customer.riview.show') }}" class="btn btn-primary btn-lg">Lihat Ulasan</a>
         </div>
     </div>

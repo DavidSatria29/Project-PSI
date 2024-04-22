@@ -4,11 +4,11 @@
 {{-- start reservation here --}}
 <div class="section default_h beta">
     <div class="container my-4">
-        <h1 class="text-center"><b>RESERVATION FORM</b></h1>
+        <h1 class="text-center" data-aos="fade-down"><b>RESERVATION FORM</b></h1>
         <div class="card" style="background-color: #12498C; color: white">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md">
+                    <div class="col-md" >
                         <form action="{{ route('customer.review.store') }}" method="POST">
                             @csrf
                             <div class="form-group">

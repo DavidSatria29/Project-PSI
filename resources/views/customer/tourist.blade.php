@@ -5,9 +5,9 @@
 <div class="section beta default_h">
   <div class="container py-4">
     <div class="row">
-      <h1 class="text-center" style="color: #12498C"><b>PAKET WISATA</b></h1>
+      <h1 class="text-center" style="color: #12498C" data-aos="fade-down"><b>PAKET WISATA</b></h1>
       <div class="col d-flex" style="justify-content: center">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem;" data-aos="flip-right">
           <img src="images/paket1.png" class="card-img-top p-3" alt="...">
           <div class="card-body">
             <h4 class="card-title text-center">Ukir Keramik</h4>
@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="col d-flex" style="justify-content: center">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem;" data-aos="flip-right">
           <img src="images/paket2.png" class="card-img-top p-3" alt="...">
           <div class="card-body">
             <h4 class="card-title text-center">Kerajinan Keramik</h4>
@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="col d-flex" style="justify-content: center">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem;" data-aos="flip-right">
           <img src="images/paket3.png" class="card-img-top p-3" alt="...">
           <div class="card-body">
             <h4 class="card-title text-center">Ukir dan Bikin Keramik</h4>
@@ -45,24 +45,24 @@
 <div class="section beta default_h">
   <div class="container py-4">
     <div class="row">
-      <h1 class="text-center" style="color: #12498C"><b>WORKSHOP KERAMIK</b></h1>
+      <h1 class="text-center" style="color: #12498C" data-aos="fade-down"><b>WORKSHOP KERAMIK</b></h1>
       <div class="col d-flex" style="justify-content: center">
-        <div class="card mx-1" style="width: 18rem;">
+        <div class="card mx-1" style="width: 18rem;" data-aos="fade-right">
           <img src="images/Paket Edukasi.png" class="card-img-top" alt="...">
         </div>
-        <div class="card mx-1" style="width: 18rem;">
+        <div class="card mx-1" style="width: 18rem;" data-aos="fade-right">
           <img src="images/Paket Edukasi.png" class="card-img-top" alt="...">
         </div>
-        <div class="card mx-1" style="width: 18rem;">
+        <div class="card mx-1" style="width: 18rem;" data-aos="fade-right">
           <img src="images/Paket Edukasi.png" class="card-img-top" alt="...">
         </div>
       </div>
     </div>
-    <div class="row justify-content-center my-4"> <!-- Added a new row for centering the button -->
+    <div class="row justify-content-center my-4" data-aos="fade-right"> <!-- Added a new row for centering the button -->
       <a href="/reservasi" class="btn btn-primary btn-lg">Reservasi Sekarang</a>
     </div>
 
-    <div class="row justify-content-center my-4"> <!-- Added a new row for centering the button -->
+    <div class="row justify-content-center my-4" data-aos="fade-right"> <!-- Added a new row for centering the button -->
       <a href="{{ route('customer.reservation.show') }}" class="btn btn-primary btn-lg">Iihat Reservasi</a>
     </div>
 
