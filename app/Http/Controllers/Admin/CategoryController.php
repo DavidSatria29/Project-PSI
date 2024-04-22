@@ -65,6 +65,7 @@ class CategoryController extends Controller
         ]);
         return redirect()->route('admin.category.show')->with('success', 'Data berhasil diubah');
     }
+    
     public function delete($id)
     {
         $category = Category::findOrFail($id);

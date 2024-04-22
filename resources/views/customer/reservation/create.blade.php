@@ -12,32 +12,36 @@
                         <form action="{{ route('customer.reservation.store') }}" method="POST">
                             @csrf
                             <div class="form-group">
+                                <label for="user_id">User ID:</label>
+                                <input type="text" class="form-control" id="user_id" name="user_id" value="{{ Auth::id() }}" readonly>
+                            </div>
+                            <div class="form-group">
                                 <label for="name">Nama:</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
+                                <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email:</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
+                                <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" required>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Nomor Telepon:</label>
-                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                                <input type="tel" class="form-control" id="phone" name="phone" value="{{ old('phone') }}" required>
                             </div>
                             <div class="form-group">
                                 <label for="address">Alamat:</label>
-                                <input type="text" class="form-control" id="address" name="address" required>
+                                <input type="text" class="form-control" id="address" name="address" value="{{ old('address') }}" required>
                             </div>
                             <div class="form-group">
                                 <label for="city">Kota:</label>
-                                <input type="text" class="form-control" id="city" name="city" required>
+                                <input type="text" class="form-control" id="city" name="city" value="{{ old('city') }}" required>
                             </div>
                             <div class="form-group">
                                 <label for="workshop_type">Jenis Workshop:</label>
-                                <input type="text" class="form-control" id="workshop_type" name="workshop_type" required>
+                                <input type="text" class="form-control" id="workshop_type" name="workshop_type" value="{{ old('workshop_type') }}" required>
                             </div>
                             <div class="form-group">
                                 <label for="date">Tanggal:</label>
-                                <input type="date" class="form-control" id="date" name="date" required>
+                                <input type="date" class="form-control" id="date" name="date" value="{{ old('date') }}" required>
                             </div>
                             <div class="form-group">
                                 <label for="status">Status:</label>

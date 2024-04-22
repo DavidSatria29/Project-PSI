@@ -101,7 +101,7 @@
                         <p class="mb-4">Kampung Wisata Keramik Dinoyo merupakan destinasi wisata yang berada di Kota Malang.</p>                        <p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
                     </div>
                 </div>
-                <div class="col-md-7" style="align-content: ">
+                <div class="col-md-7" style="align-content: center">
                     <div class="hero-img-wrap">
                         <img src="{{ asset('images/Keramikdummy.png') }}" class="img-fluid">
                     </div>

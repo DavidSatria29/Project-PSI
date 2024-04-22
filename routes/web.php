@@ -20,7 +20,11 @@ use App\Http\Controllers\Admin\PaymentConfirmationController;
 use App\Http\Controllers\Craftman\ReportController;
 use App\Http\Controllers\Customer\HomeController;
 use App\Http\Controllers\Customer\CommerceController;
+use App\Http\Controllers\ReservationCostumerController;
 use App\Http\Controllers\Customer\TouristController;
+use App\Http\Controllers\ReservationCustomerController;
+use App\Http\Controllers\ReviewCustomerController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -66,6 +70,19 @@ Route::middleware(['auth', 'role:customer'])->group(
         Route::get('/detail-order/{id}', [CommerceController::class, 'detail_orders'])->name('customer.detail.orders');
 
         //reservation
+
+        Route::get('/reservations', [ReservationCustomerController::class, 'index'])->name('customer.reservation.show');
+        Route::get('/reservations/create', [ReservationCustomerController::class, 'create'])->name('customer.reservation.create');
+        Route::post('/reservations', [ReservationCustomerController::class, 'store'])->name('customer.reservation.store');
+        Route::get('/reservations/{id}/edit', [ReservationCustomerController::class, 'edit'])->name('customer.reservation.edit');
+        Route::put('/reservations/{id}', [ReservationCustomerController::class, 'update'])->name('customer.reservation.update');
+        Route::delete('/reservations/{id}', [ReservationCustomerController::class, 'delete'])->name('customer.reservation.delete');
+
+        // riview 
+        Route::get('/reviews', [ReviewCustomerController::class, 'index'])->name('customer.riview.show');
+        Route::get('/reviews/create', [ReviewCustomerController::class, 'create'])->name('customer.review.create');
+        Route::post('/reviews', [ReviewCustomerController::class, 'store'])->name('customer.review.store');
+        Route::delete('/reservations/{id}', [ReviewCustomerController::class, 'delete'])->name('customer.reservation.delete');
     }
 );
 Route::get('/', [HomeController::class, 'index'])->name('customer.home');
@@ -179,7 +196,7 @@ Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/reservasi', function () {
-    return view('customer.Form.reservation');
+    return view('customer.reservation.create');
 });
 Route::get('/ulasan', function () {
     return view('customer.Form.review');
