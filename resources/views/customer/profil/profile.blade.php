@@ -27,7 +27,7 @@
           <div class="mt-2 text-center">
             <a href="{{ route('customer.editProfile',['id'=>$user->id]) }}" class="btn btn-primary">Ubah Profil</a>
             <a href="{{ route('customer.status.orders') }}" class="btn btn-primary">Status Pemesanan</a>
-            <a href="" class="btn btn-primary">Riwayat Pemesanan</a>
+            <a href="{{ route('customer.history.orders') }}" class="btn btn-primary">Riwayat Pemesanan</a>
           </div>
         </div>
       </div>

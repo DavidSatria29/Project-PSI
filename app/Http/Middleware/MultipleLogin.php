@@ -16,16 +16,11 @@ class MultipleLogin
 
     public function handle($request, Closure $next, ...$roles)
     {
-        if (!auth()->check()) {
-            return redirect('customer.home');
+
+        if (auth()->check() && in_array(auth()->user()->role, $roles)) {
+            return $next($request);
         }
 
-        $userRoles = explode(';', $roles[0]);
-
-        if (!in_array(auth()->user()->role, $userRoles)) {
-            abort(403, 'Unauthorized action.');
-        }
-
-        return $next($request);
+        return redirect()->route('login');
     }
 }
