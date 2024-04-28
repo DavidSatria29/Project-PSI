@@ -62,13 +62,13 @@ Route::middleware(['auth', 'role:customer'])->group(
 
         // order
         Route::get('/status', [CommerceController::class, 'status_orders'])->name('customer.status.orders');
+        Route::get('/history', [CommerceController::class, 'history_orders'])->name('customer.history.orders');
         Route::get('/payment-order/{id}', [CommerceController::class, 'payment_orders'])->name('customer.payment.orders');
         Route::post('/payment-order-update/{id}', [CommerceController::class, 'payment_update_orders'])->name('customer.payment.update.orders');
         Route::get('/confirmation-order/{id}', [CommerceController::class, 'payment_confirmation_orders'])->name('customer.confirmation.orders');
         Route::post('/confirmation-order-store/{id}', [CommerceController::class, 'payment_confirmation_store_orders'])->name('customer.confirmation.store.orders');
         Route::get('/cancel-order/{id}', [CommerceController::class, 'cancel_orders'])->name('customer.cancel.orders');
         Route::get('/detail-order/{id}', [CommerceController::class, 'detail_orders'])->name('customer.detail.orders');
-
         //reservation
 
         Route::get('/reservations', [ReservationCustomerController::class, 'index'])->name('customer.reservation.show');

@@ -228,8 +228,8 @@ class CommerceController extends Controller
                 ]);
             }
         }
-        $product_orders = Order::where('user_id', auth()->user()->id)->where('category_id', 1)->whereNot('status', 'Dibatalkan')->get();
-        $custom_orders = Order::where('user_id', auth()->user()->id)->where('category_id', 2)->whereNot('status', 'Dibatalkan')->get();
+        $product_orders = Order::where('user_id', auth()->user()->id)->where('category_id', 1)->whereNot('status', ['Dibatalkan', 'Selesai'])->get();
+        $custom_orders = Order::where('user_id', auth()->user()->id)->where('category_id', 2)->whereNot('status', ['Dibatalkan', 'Selesai'])->get();
         return view('customer.order.status', compact('product_orders', 'custom_orders'));
     }
 
@@ -327,5 +327,13 @@ class CommerceController extends Controller
         $product_details = explode(', ', $order->product_details);
         $amount_details = explode(', ', $order->amount_details);
         return view('customer.order.detail', compact('order', 'product_details', 'amount_details'));
+    }
+
+    public function history_orders()
+    {
+        $product_orders = Order::where('user_id', auth()->user()->id)->where('category_id', 1)->whereIn('status', ['Dibatalkan', 'Selesai'])->get();
+        $custom_orders = Order::where('user_id', auth()->user()->id)->where('category_id', 2)->whereIn('status', ['Dibatalkan', 'Selesai'])->get();
+
+        return view('customer.order.history', compact('product_orders', 'custom_orders'));
     }
 }
