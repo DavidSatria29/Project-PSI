@@ -2,8 +2,8 @@
 @section('home', 'active')
 @section('content')
 {{-- start reservation here --}}
-<div class="section default_h beta">
-    <div class="container my-4">
+<div class="section beta">
+    <div class="container py-4">
         <h1 class="text-center"><b>RESERVATION FORM</b></h1>
         <div class="card" style="background-color: #12498C; color: white">
             <div class="card-body">

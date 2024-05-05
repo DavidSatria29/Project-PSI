@@ -3,32 +3,144 @@
 @section('content')
 
     {{-- Produk --}}
-    <div class="section beta default_h">
+    <div class="section beta">
       <div class="container pt-4 pb-4">
         <div class="row align-items-center"> <!-- Added align-items-center class here -->
-          <h1 class="text-center" style="color: #12498C"><b>Produk</b></h1>
+          <h1 class="text-center" style="color: #12498C" data-aos="fade-down"><b>PRODUK</b></h1>
         </div>
-        <div class="row align-items-center pt-5"> <!-- Added align-items-center class here -->
-            <div class="d-grid gap-2 d-md-block text-center" role="group" aria-label="Basic outlined example">
-                <a href="{{ route('customer.glass_products') }}" type="button" class="btn btn-outline-primary p-5"><i class="fas fa-wine-glass fa-5x"></i><br>Gelas</a>
-                <a href="{{ route('customer.vase_products') }}" type="button" class="btn btn-outline-primary p-5"><i class="fa-solid fa-whiskey-glass fa-5x"></i><br>Vas</a>
-                <a href="{{ route('customer.utensil_products') }}" type="button" class="btn btn-outline-primary p-5"><i class="fa-solid fa-utensils fa-5x"></i><br>Alat Makan</a>
-                <a href="{{ route('customer.decoration_products') }}" type="button" class="btn btn-outline-primary p-5"><i class="fas fa-snowman fa-5x"></i><br>Hiasan</a>
-                <a href="{{ route('customer.custom_products.create') }}" type="button" class="btn btn-outline-primary p-5"><i class="fas fa-file-alt fa-5x"></i><br>Custom</a>
-                <a href="{{ route('customer.other_products') }}" type="button" class="btn btn-outline-primary p-5"><i class="fa-solid fa-palette fa-5x"></i><br>Lain-lain</a>
+        <div class="row align-items-center justify-content-center pt-1" data-aos="fade-down"> <!-- Added justify-content-center class here -->
+          <div class="col-md-4 d-flex" style="justify-content: center">
+              <a href="{{ route('customer.glass_products') }}" >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="image-overlay"></div> <!-- Add overlay -->
+                    <img src="images/Gelas1.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    <h1>Gelas</h1>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Gelas</h1>
+                    <p>Klik untuk Membeli</p>
+                    <p>Click for start buying</p>
+                  </div>
+                </div>
               </div>
 
+            </a>
+          </div>
+
+          <div class="col-md-4 d-flex" style="justify-content: center">
+            <a href="{{ route('customer.vase_products') }}">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="image-overlay"></div> <!-- Add overlay -->
+                    <img src="images/Keramik2.png" alt="Avatar" style="width:300px;height:300px;">
+                    <h1>Vas</h1>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Vas</h1>
+                    <p>Klik untuk Membeli</p>
+                    <p>Click for start buying</p>
+                  </div>
+                </div>
+              </div>
+
+            </a>
+          </div>      
+
+          <div class="col-md-4 d-flex" style="justify-content: center">
+            <a href="{{ route('customer.utensil_products') }}">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="image-overlay"></div> <!-- Add overlay -->
+                    <img src="images/Piring3.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    <h1>Alat Makan</h1>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Alat Makan</h1>
+                    <p>Klik untuk Membeli</p>
+                    <p>Click for start buying</p>
+                  </div>
+                </div>
+              </div>
+
+            </a>
+          </div>
+
+
+        </div>
+        <div class="row align-items-center pt-5" data-aos="fade-down"> 
+          <div class="col-md-4 d-flex" style="justify-content: center">
+            <a href="{{ route('customer.decoration_products') }}">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="image-overlay"></div> <!-- Add overlay -->
+                    <img src="images/Decor1.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    <h1>Hiasan</h1>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Hiasan</h1>
+                    <p>Klik untuk Membeli</p>
+                    <p>Click for start buying</p>
+                  </div>
+                </div>
+              </div>
+
+          </a>
+          </div>
+
+          <div class="col-md-4 d-flex" style="justify-content: center">
+            <a href="{{ route('customer.custom_products.create') }}">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="image-overlay"></div> <!-- Add overlay -->
+                    <img src="images/Decor2.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    <h1>Custon</h1>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Custom</h1>
+                    <p>Klik untuk Membeli</p>
+                    <p>Click for start buying</p>
+                  </div>
+                </div>
+              </div>
+
+            </a>
+            
+          </div>
+          <div class="col-md-4 d-flex" style="justify-content: center">
+            <a href="{{ route('customer.other_products') }}">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="image-overlay"></div> <!-- Add overlay -->
+                    <img src="images/Gelas3.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    <h1>Lain-Lain</h1>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Lain-Lain</h1>
+                    <p>Klik untuk Membeli</p>
+                    <p>Click for start buying</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
 
       </div>
     </div>
 
       {{-- Metode Pembayaran --}}
-    <div class="section beta default_h">
+    <div class="section beta ">
       <div class="container py-4">
-        <div class="row align-items-center" style="min-height: 50vh">
-          <h1 class="text-center" style="color: #12498C"><b>Metode Pembayaran</b></h1>         
-            <div class="card">
+        <div class="row align-items-center">
+          <h1 class="text-center" style="color: #12498C;" data-aos="fade-down"><b>METODE PEMBAYARAN</b></h1>         
+            <div class="card d-inline-flex" data-aos="fade-down">
               <div class="card-body justify-content" style="min-height: 200px">
                 <img src="images/Visa.png" class="mx-5 my-3 img-fluid" style="max-height: 5vh; " alt="">
                 <img src="images/MC.png" class="mx-5 my-3 img-fluid" style="max-height: 5vh; " alt="">

@@ -3,12 +3,12 @@
 @section('content')
 {{-- start reservation here --}}
 <div class="section default_h beta">
-    <div class="container my-4">
-        <h1 class="text-center"><b>RESERVATION FORM</b></h1>
-        <div class="card" style="background-color: #12498C; color: white">
+    <div class="container py-4">
+        <h1 class="text-center" data-aos="fade-down" style="color: #12498C"><b>ULASAN</b></h1>
+        <div class="card" style="background-color: #12498C; color: white" data-aos="fade-right">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md">
+                    <div class="col-md" >
                         <form action="{{ route('customer.review.store') }}" method="POST">
                             @csrf
                             <div class="form-group">
@@ -43,7 +43,8 @@
                                 <label for="comment">Comment:</label>
                                 <textarea class="form-control" id="comment" name="comment" rows="5" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-light mt-2">Kirim</button>
+                            <button type="submit" class="btn" 
+                            style="background: #f9bf29; color: black; margin-top: 2vh; "> Kirim </button>
                         </form>
                     </div>
                 </div>

@@ -5,9 +5,9 @@
 <div class="section beta default_h">
 	<div class="container">
 		<div class="row my-2" style="justify-content: space-between">
-			<h1 class="text-center" style="color: #12498C"><b>KONTAK</b></h1>
+			<h1 class="text-center" style="color: #12498C"  data-aos="fade-down"><b>KONTAK</b></h1>
 			
-			<div class="col">
+			<div class="col"  data-aos="fade-right">
 				<form class="row g-3 py-3 px-5" method="POST" action="{{ route('customer.storeContact') }}">
 					@csrf
 					<div class="col-md-4">
@@ -26,7 +26,7 @@
 					  <label for="inputMessage" class="form-label"><b>Message</b></label>
 					  <textarea id="inputMessage" cols="12" rows="10" placeholder="write your message....." name="message" class="form-control"></textarea>
 					</div>
-					<div class="col-12 text-center">
+					<div class="col-12 text-center" data-aos="fade-rigth">
 					  <button type="submit" class="btn btn-primary">Send</button>
 					</div>
 				  </form>
