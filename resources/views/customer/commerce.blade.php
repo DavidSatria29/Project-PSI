@@ -4,11 +4,12 @@
 
     {{-- Produk --}}
     <div class="section beta">
-      <div class="container pt-4 pb-4" style="display: flex; flex-direction: column; align-items: center;">        <div class="row align-items-center"> <!-- Added align-items-center class here -->
+      <div class="container pt-4 pb-4">
+        <div class="row align-items-center"> <!-- Added align-items-center class here -->
           <h1 class="text-center" style="color: #12498C" data-aos="fade-down"><b>PRODUK</b></h1>
         </div>
         <div class="row align-items-center justify-content-center pt-1" data-aos="fade-down"> <!-- Added justify-content-center class here -->
-          <div class="col-md-4 ">
+          <div class="col-md-4 d-flex" style="justify-content: center">
               <a href="{{ route('customer.glass_products') }}" >
               <div class="flip-card">
                 <div class="flip-card-inner">
@@ -28,7 +29,7 @@
             </a>
           </div>
 
-          <div class="col-md-4 ">
+          <div class="col-md-4 d-flex" style="justify-content: center">
             <a href="{{ route('customer.vase_products') }}">
               <div class="flip-card">
                 <div class="flip-card-inner">
@@ -48,7 +49,7 @@
             </a>
           </div>      
 
-          <div class="col-md-4 ">
+          <div class="col-md-4 d-flex" style="justify-content: center">
             <a href="{{ route('customer.utensil_products') }}">
               <div class="flip-card">
                 <div class="flip-card-inner">
@@ -71,7 +72,7 @@
 
         </div>
         <div class="row align-items-center pt-5" data-aos="fade-down"> 
-          <div class="col-md-4 ">
+          <div class="col-md-4 d-flex" style="justify-content: center">
             <a href="{{ route('customer.decoration_products') }}">
               <div class="flip-card">
                 <div class="flip-card-inner">
@@ -91,7 +92,7 @@
           </a>
           </div>
 
-          <div class="col-md-4 ">
+          <div class="col-md-4 d-flex" style="justify-content: center">
             <a href="{{ route('customer.custom_products.create') }}">
               <div class="flip-card">
                 <div class="flip-card-inner">
@@ -111,7 +112,7 @@
             </a>
             
           </div>
-          <div class="col-md-4 ">
+          <div class="col-md-4 d-flex" style="justify-content: center">
             <a href="{{ route('customer.other_products') }}">
               <div class="flip-card">
                 <div class="flip-card-inner">

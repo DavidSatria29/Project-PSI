@@ -208,6 +208,15 @@
 		<script>
 			AOS.init();
 		  </script>
+		<script>
+						// Initialize the carousel only on mobile devices
+			$(document).ready(function() {
+			if ($(window).width() <= 768) {
+				$('.carousel').carousel();
+			}
+			});
+
+		</script>
 		@include('sweetalert::alert')
 </body>
 </html>

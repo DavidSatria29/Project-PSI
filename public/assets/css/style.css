@@ -546,6 +546,7 @@ a {
 .blog-section {
   background-color: rgba(122, 154, 194, 0.2);
   padding: 3vh 0 ; }
+
   .blog-section .post-entry a {
     text-decoration: none; }
   .blog-section .post-entry .post-thumbnail {
@@ -634,6 +635,10 @@ a {
       max-width: 380px; 
     }
     @media (max-width: 768px){
+      .footer-section .sofa-img {
+        top: -50px;
+        z-index: 1;
+        right: 0; }
       .footer-section .sofa-img img{
         max-width: 200px;
       }
@@ -659,12 +664,12 @@ a {
       text-align: center;
       line-height: 40px;
       display: inline-block;
-      background: #dce5e4;
-      color: #3b5d50;
+      background: #12498C;
+      color:#dce5e4 ;
       border-radius: 50%; }
       .footer-section .custom-social li a:hover {
-        background: #3b5d50;
-        color: #ffffff; }
+        background :#ffffff ;
+        color:  #12498C; }
   .footer-section .border-top {
     border-color: #dce5e4; }
     .footer-section .border-top.copyright {
