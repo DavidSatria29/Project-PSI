@@ -4,8 +4,8 @@
 {{-- start reservation here --}}
 <div class="section default_h beta">
     <div class="container my-4">
-        <h1 class="text-center" data-aos="fade-down"><b>RESERVATION FORM</b></h1>
-        <div class="card" style="background-color: #12498C; color: white">
+        <h1 class="text-center" data-aos="fade-down"><b>ULASAN</b></h1>
+        <div class="card" style="background-color: #12498C; color: white" data-aos="fade-right">
             <div class="card-body">
                 <div class="row">
                     <div class="col-md" >
