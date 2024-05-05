@@ -52,10 +52,11 @@
                                 </select>
                             </div>
 
-                            <button type="submit" class="btn btn-success">Reservasi Sekarang</button>
+                            <button type="submit" class="btn" 
+                            style="background: #f9bf29; color: black; margin-top: 2vh; ">Reservasi Sekarang</button>
                         </form>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-2">
                         <h4>RINCIAN</h4>
                         <table class="table">
                             <thead>
@@ -81,20 +82,24 @@
                         <hr>
                         <p><strong>Total: $1750</strong></p>
                         <hr>
-                        <p><strong>Payment Method</strong></p>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="payment_method" id="bank_payment" value="bank">
-                            <label class="form-check-label" for="bank_payment">
-                                <img class="mx-5 my-3 img-fluid" style="max-height: 5vh; " src="images/Visa.png" alt="Bank Transfer">
-                                <img class="mx-5 my-3 img-fluid" style="max-height: 5vh; " src="images/MC.png" alt="Bank Transfer">
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="payment_method" id="cash_on_delivery" value="cod">
-                            <label class="form-check-label" for="cash_on_delivery">
-                                <img class="mx-5 my-3 img-fluid" style="max-height: 5vh; " src="images/COD.png" alt="Cash on Delivery">
-                            </label>
-                        </div>
+                        <div class="card" style="min-width: 18rem; color: black">
+                            <div class="card-body">
+                              <h5 class="card-title"><strong>Payment Method</strong></h5>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="payment_method" id="bank_payment" value="bank">
+                                <label class="form-check-label" for="bank_payment">
+                                    <img class="mx-5 my-3 img-fluid" style="max-height: 5vh; " src="images/Visa.png" alt="Bank Transfer">
+                                    <img class="mx-5 my-3 img-fluid" style="max-height: 5vh; " src="images/MC.png" alt="Bank Transfer">
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="payment_method" id="cash_on_delivery" value="cod">
+                                <label class="form-check-label" for="cash_on_delivery">
+                                    <img class="mx-5 my-3 img-fluid" style="max-height: 5vh; " src="images/COD.png" alt="Cash on Delivery">
+                                </label>
+                            </div>
+                                </div>
+                          </div>
                         <br>
                     </div>
                 </div>
