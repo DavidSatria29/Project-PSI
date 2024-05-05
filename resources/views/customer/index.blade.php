@@ -9,7 +9,7 @@
             <h1 class="section-title text-center" style="color: #12498C" data-aos="fade-down"><b>SEJARAH</b></h1>
             <div class="col-lg-5">
                 <div class="img-wrap" data-aos="fade-left">
-                    <img src="images/keramik2.png" alt="Image" class="img-fluid">
+                    <img src="images/keramik2.png" alt="Image" class="img-fluid" style="max-width: ">
                     <div class="circle" style="background-color: #12498C ; z-index: -1; left: 45%; top: 46%"></div>
 
                 </div>
@@ -141,7 +141,7 @@
 <!-- Start Review Section -->
 <div class="blog-section">
     <div class="container">
-        <div class="row mb-5">
+        <div class="row mb-3">
             <h1 class="section-title text-center" style="color: #12498C"data-aos="fade-down"><b>REVIEW</b></h1>
             <div class="col-md-6">
             </div>
@@ -198,12 +198,17 @@
             </div>
 
         </div>
-        <div class="row justify-content-center my-4" data-aos="fade-right"> <!-- Added a new row for centering the button -->
-            <a href="/ulasan" class="btn btn-primary btn-lg">Tambah Ulasan</a>
-        </div>
-
-        <div class="row justify-content-center my-4" data-aos="fade-right"> <!-- Added a new row for centering the button -->
-            <a href="{{ route('customer.riview.show') }}" class="btn btn-primary btn-lg">Lihat Ulasan</a>
+        <div class="row px-3">
+            <div class="col-md-2">
+                <div class="row justify-content-center my-4" data-aos="fade-right"> <!-- Added a new row for centering the button -->
+                    <a href="/ulasan" class="btn btn-primary">Tambah Ulasan</a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="row justify-content-center my-4" data-aos="fade-right"> <!-- Added a new row for centering the button -->
+                    <a href="{{ route('customer.riview.show') }}" class="btn btn-primary">Lihat Ulasan</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

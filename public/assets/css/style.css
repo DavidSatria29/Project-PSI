@@ -97,13 +97,13 @@ a {
 
 .hero {
   background: #12498C;
-  padding: calc(4rem - 30px) 0 0rem 0; }
+  padding: calc(8vh - 30px) 0 0rem 0; }
   @media (min-width: 768px) {
     .hero {
-      padding: calc(4rem - 30px) 0 4rem 0; } }
+      padding: calc(8vh - 30px) 0 4rem 0; } }
   @media (min-width: 992px) {
     .hero {
-      padding: calc(8rem - 30px) 0 8rem 0; } }
+      padding: calc(8vh - 30px) 0 8rem 0; } }
   .hero .intro-excerpt {
     position: relative;
     z-index: 4; }
@@ -180,8 +180,8 @@ a {
   padding: 12px 30px;
   border-radius: 30px;
   color: #ffffff;
-  background: #2f2f2f;
-  border-color: #2f2f2f; }
+  background: #12498C;
+  border-color: #12498C; }
   .btn:hover {
     color: #ffffff;
     background: #222222;
@@ -411,7 +411,7 @@ a {
       top: 8px; }
 
 .popular-product {
-  padding: 0 0 7rem 0; 
+  padding: 3vh 0 ; 
   background-color: rgba(122, 154, 194, 0.2)
 }
   .popular-product .product-item-sm h3 {
@@ -545,11 +545,11 @@ a {
 
 .blog-section {
   background-color: rgba(122, 154, 194, 0.2);
-  padding: 7rem 0 12rem 0; }
+  padding: 3vh 0 ; }
   .blog-section .post-entry a {
     text-decoration: none; }
   .blog-section .post-entry .post-thumbnail {
-    display: block;
+    display: ruby-text;
     margin-bottom: 20px; }
 @media (max-width: 768px) {
   .blog-section .post-entry .post-thumbnail .card {
