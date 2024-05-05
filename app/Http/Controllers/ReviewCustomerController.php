@@ -25,15 +25,13 @@ class ReviewCustomerController extends Controller
 
     public function create()
     {
-        return view('customer.riview.create');
+        return view('customer.form.review');
     }
 
     public function store(Request $request)
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'product_id' => 'required|string|max:8',
-            'custom_product_id' => 'nullable|integer',
             'product_name' => 'required|string',
             'rating' => 'required|numeric|min:0|max:5',
             'comment' => 'required|string',
@@ -42,8 +40,6 @@ class ReviewCustomerController extends Controller
         // Create a new review
         $review = new Review();
         $review->user_id = auth()->id();
-        $review->product_id = $request->product_id;
-        $review->custom_product_id = $request->custom_product_id;
         $review->name = $request->name;
         $review->product_name = $request->product_name;
         $review->rating = $request->rating;

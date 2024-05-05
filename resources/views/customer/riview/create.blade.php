@@ -15,14 +15,14 @@
                                 <label for="name">Nama:</label>
                                 <input type="text" class="form-control" id="name" name="name" required>
                             </div>
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <label for="product_id">Product ID:</label>
                                 <input type="text" class="form-control" id="product_id" name="product_id" required>
                             </div>
                             <div class="form-group">
                                 <label for="custom_product_id">Custom Product ID:</label>
                                 <input type="text" class="form-control" id="custom_product_id" name="custom_product_id">
-                            </div>
+                            </div> --}}
                             <div class="form-group">
                                 <label for="product_name">Product Name:</label>
                                 <input type="text" class="form-control" id="product_name" name="product_name" required>

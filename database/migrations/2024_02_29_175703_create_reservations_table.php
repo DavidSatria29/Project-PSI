@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('address');
             $table->string('city');
             $table->string('workshop_type');
-            $table->date('date');
+            $table->string('date');
             $table->enum('status', ['pending', 'approved', 'rejected'])->default('pending');
             $table->timestamps();
         });

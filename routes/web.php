@@ -71,18 +71,13 @@ Route::middleware(['auth', 'role:customer'])->group(
         Route::get('/detail-order/{id}', [CommerceController::class, 'detail_orders'])->name('customer.detail.orders');
         //reservation
 
-        Route::get('/reservations', [ReservationCustomerController::class, 'index'])->name('customer.reservation.show');
-        Route::get('/reservations/create', [ReservationCustomerController::class, 'create'])->name('customer.reservation.create');
-        Route::post('/reservations', [ReservationCustomerController::class, 'store'])->name('customer.reservation.store');
-        Route::get('/reservations/{id}/edit', [ReservationCustomerController::class, 'edit'])->name('customer.reservation.edit');
-        Route::put('/reservations/{id}', [ReservationCustomerController::class, 'update'])->name('customer.reservation.update');
-        Route::delete('/reservations/{id}', [ReservationCustomerController::class, 'delete'])->name('customer.reservation.delete');
 
+        Route::get('/reservations-create', [ReservationCustomerController::class, 'create'])->name('customer.reservation.create');
+        Route::post('/reservations-store', [ReservationCustomerController::class, 'store'])->name('customer.reservation.store');
         // riview 
         Route::get('/reviews', [ReviewCustomerController::class, 'index'])->name('customer.riview.show');
-        Route::get('/reviews/create', [ReviewCustomerController::class, 'create'])->name('customer.review.create');
-        Route::post('/reviews', [ReviewCustomerController::class, 'store'])->name('customer.review.store');
-        Route::delete('/reservations/{id}', [ReviewCustomerController::class, 'delete'])->name('customer.reservation.delete');
+        Route::get('/reviews-create', [ReviewCustomerController::class, 'create'])->name('customer.review.create');
+        Route::post('/reviews-store', [ReviewCustomerController::class, 'store'])->name('customer.review.store');
     }
 );
 Route::get('/', [HomeController::class, 'index'])->name('customer.home');
@@ -193,14 +188,3 @@ Route::middleware(['auth', 'role:craftman'])->group(function () {
 
 
 Auth::routes();
-
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/reservasi', function () {
-    return view('customer.reservation.create');
-});
-Route::get('/ulasan', function () {
-    return view('customer.Form.review');
-});
-Route::get('/cart2', function () {
-    return view('customer.cart');
-});

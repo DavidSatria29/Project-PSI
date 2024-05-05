@@ -17,21 +17,23 @@
                     <thead>
                         <tr>
                             <th>NO</th>
+                            <th>Nama Pengguna</th>
                             <th>Product Name</th>
                             <th>Rating</th>
                             <th>Comment</th>
-                            <th>Status</th>
-                            <th>Delete</th>
+                            {{-- <th>Status</th>
+                            <th>Delete</th> --}}
                         </tr>
                     </thead>
                     <tbody>
                         @forelse ($reviews as $review)
                         <tr>
                             <td>{{ $loop->iteration }}</td>
+                            <td>{{ $review->name }}</td>
                             <td>{{ $review->product_name }}</td>
                             <td>{{ $review->rating }}</td>
                             <td>{{ $review->comment }}</td>
-                            <td>{{ $review->status }}</td>
+                            {{-- <td>{{ $review->status }}</td> --}}
                         </tr>
                         @empty
                         <tr>

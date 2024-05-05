@@ -21,15 +21,13 @@ class ReservationCustomerController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-
             'name' => 'required|string',
             'email' => 'required|email',
             'phone' => 'required|string',
             'address' => 'required|string',
             'city' => 'required|string',
             'workshop_type' => 'required|string',
-            'date' => 'required|date',
-            'status' => 'required|in:pending,approved,rejected',
+            'date' => 'required|string',
         ]);
 
         Reservation::create([
@@ -41,7 +39,6 @@ class ReservationCustomerController extends Controller
             'city' => $request->city,
             'workshop_type' => $request->workshop_type,
             'date' => $request->date,
-            'status' => $request->status,
         ]);
 
 
@@ -52,7 +49,7 @@ class ReservationCustomerController extends Controller
     {
         $reservation = Reservation::findOrFail($id);
         $reservation->delete();
-        return redirect()->route('costumer.reservation.show')->with('success', 'Data berhasil dihapus');
+        return redirect()->route('costumer.tourist')->with('success', 'Data berhasil dihapus');
     }
 
     public function edit($id)

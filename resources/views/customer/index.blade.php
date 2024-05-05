@@ -144,9 +144,9 @@
             <h1 class="section-title text-center" style="color: #12498C"data-aos="fade-down"><b>REVIEW</b></h1>
             <div class="col-md-6">
             </div>
-            <div class="col-md-6 text-start text-md-end" data-aos="fade-left">
+            {{-- <div class="col-md-6 text-start text-md-end" data-aos="fade-left">
                 <a href="#" class="more">View All Posts</a>
-            </div>
+            </div> --}}
         </div>
 
         <div class="row">
@@ -200,7 +200,7 @@
         <div class="row px-3">
             <div class="col-md-2">
                 <div class="row justify-content-center my-4" data-aos="fade-right"> <!-- Added a new row for centering the button -->
-                    <a href="/ulasan" class="btn btn-primary">Tambah Ulasan</a>
+                    <a href="{{ route('customer.review.create') }}" class="btn btn-primary">Tambah Ulasan</a>
                 </div>
             </div>
             <div class="col-md-2">

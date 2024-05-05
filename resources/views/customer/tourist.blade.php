@@ -89,15 +89,15 @@
       <div class="row px-3">
           <div class="col-md-4">
             <div class="row justify-content-center my-4" data-aos="fade-right"> <!-- Added a new row for centering the button -->
-              <a href="/reservasi" class="btn btn-primary">Reservasi Sekarang</a>
+              <a href="{{ route('customer.reservation.create') }}" class="btn btn-primary">Reservasi Sekarang</a>
             </div>
           </div>
           <div class="col-md-2">
 
         
-            <div class="row justify-content-center my-4" data-aos="fade-right"> <!-- Added a new row for centering the button -->
+            {{-- <div class="row justify-content-center my-4" data-aos="fade-right"> <!-- Added a new row for centering the button -->
               <a href="{{ route('customer.reservation.show') }}" class="btn btn-primary">Lihat Reservasi</a>
-            </div>
+            </div> --}}
 
           </div>
       </div>
