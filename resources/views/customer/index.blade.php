@@ -51,14 +51,13 @@
 <!-- Start Fasilitas -->
 <div class="popular-product">
     <div class="container">
-        <div class="row justify-content-between">
+        <div class="row d-flex" style="justify-content: center">
             <h1 class="section-title text-center" style="color: #12498C" data-aos="fade-down"><b>FASILITAS</b></h1>
-
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0"data-aos="fade-right">
                     <div class="product-item-sm d-flex">
                         <div class="thumbnail">
-                            <img src="images/dummy.png" alt="Image" class="img-fluid">
+                            <img src="images/Paket Edukasi.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="pt-3">
                             <h3>Wisata</h3>
@@ -71,7 +70,7 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade-right">
                     <div class="product-item-sm d-flex">
                         <div class="thumbnail">
-                            <img src="images/dummy.png" alt="Image" class="img-fluid">
+                            <img src="images/paket31.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="pt-3">
                             <h3>Cengkrama Perajin</h3>
@@ -84,7 +83,7 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0"data-aos="fade-right">
                     <div class="product-item-sm d-flex">
                         <div class="thumbnail">
-                            <img src="images/dummy.png" alt="Image" class="img-fluid">
+                            <img src="images/Piring2.jpg" alt="Image" class="img-fluid">
                         </div>
                         <div class="pt-3">
                             <h3>Sovenir Keramik</h3>
@@ -97,7 +96,7 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0"data-aos="fade-right">
                     <div class="product-item-sm d-flex">
                         <div class="thumbnail">
-                            <img src="images/dummy.png" alt="Image" class="img-fluid">
+                            <img src="images/paket11.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="pt-3">
                             <h3>Buat Keramik Sendiri</h3>
@@ -110,7 +109,7 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0"data-aos="fade-right">
                     <div class="product-item-sm d-flex">
                         <div class="thumbnail">
-                            <img src="images/dummy.png" alt="Image" class="img-fluid">
+                            <img src="images/decor2.jpg" alt="Image" class="img-fluid">
                         </div>
                         <div class="pt-3">
                             <h3>Layanan Premium</h3>
@@ -123,7 +122,7 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0"data-aos="fade-right">
                     <div class="product-item-sm d-flex">
                         <div class="thumbnail">
-                            <img src="images/dummy.png" alt="Image" class="img-fluid">
+                            <img src="images/person_1.jpg" alt="Image" class="img-fluid">
                         </div>
                         <div class="pt-3">
                             <h3>Pelayanan Ramah</h3>
