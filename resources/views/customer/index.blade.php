@@ -14,7 +14,7 @@
 
                 </div>
             </div>
-            <div class="col-lg-6" data-aos="fade-left">
+            <div class="col-lg-6" data-aos="fade-left" style="text-align: justify">
                 <p>
                     Sejarah Kampung Keramik Dinoyo berakar pada Kerajaan Kanjuruhan, yang terkenal dengan keahliannya dalam membuat gerabah. Seiring waktu, teknik pembuatan keramik berkembang dan kampung ini menjadi pusat industri keramik di Malang.
                     Yang membuat Kampung Keramik Dinoyo begitu istimewa adalah keasliannya. Berjalan di sepanjang gang-gang sempit, Anda akan melihat rumah-rumah tradisional dengan tungku pembakaran keramik di halamannya.
@@ -160,7 +160,7 @@
                             <div class="card-body">
                                 <h4 class="card-title text-center">Vas Bunga</h4>
                                 <h5 class="card-text text-center">-Bagas-</h5>
-                                <p class="card-text text-justify">Elegan dan berkelas, vas bunga ini menjadi sentuhan indah untuk rumah Anda. Desainnya yang menawan dan kualitasnya yang prima membuatnya menjadi pilihan yang sempurna untuk menghiasi ruangan Anda.</p>
+                                <p class="card-text" style="text-align: justify">Elegan dan berkelas, vas bunga ini menjadi sentuhan indah untuk rumah Anda. Desainnya yang menawan dan kualitasnya yang prima membuatnya menjadi pilihan yang sempurna untuk menghiasi ruangan Anda.</p>
                             </div>
                         </div>
                     </a>
@@ -175,7 +175,7 @@
                             <div class="card-body">
                                 <h4 class="card-title text-center">Topeng Hias</h4>
                                 <h5 class="card-text text-center">-David-</h5>
-                                <p class="card-text text-justify">Topeng hias yang menawan ini adalah perpaduan sempurna antara seni dan budaya. Dibuat dengan detail yang cermat, setiap unsur dalam topeng ini menghadirkan keindahan dan keanggunan yang memikat.</p>
+                                <p class="card-text text-justify" style="text-align: justify">Topeng hias yang menawan ini adalah perpaduan sempurna antara seni dan budaya. Dibuat dengan detail yang cermat, setiap unsur dalam topeng ini menghadirkan keindahan dan keanggunan yang memikat.</p>
                             </div>
                         </div>
                     </a>
@@ -190,7 +190,7 @@
                             <div class="card-body">
                                 <h4 class="card-title text-center">Piring Keramik</h4>
                                 <h5 class="card-text text-center">-Amanda-</h5>
-                                <p class="card-text text-justify">Piring keramik ini tidak hanya fungsional, tetapi juga merupakan karya seni yang mempesona. Dengan motif yang unik dan warna yang cerah, setiap hidangan Anda akan terlihat lebih istimewa di atas piring ini.</p>
+                                <p class="card-text text-justify" style="text-align: justify">Piring keramik ini tidak hanya fungsional, tetapi juga merupakan karya seni yang mempesona. Dengan motif yang unik dan warna yang cerah, setiap hidangan Anda akan terlihat lebih istimewa di atas piring ini.</p>
                             </div>
                         </div>
                     </a>

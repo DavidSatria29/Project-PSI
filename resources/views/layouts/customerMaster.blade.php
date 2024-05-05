@@ -134,7 +134,7 @@
 						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">
 							<img src="{{ asset('images/logo.png') }}" class="card-img-top" alt="..." style="width: 150px; height: 150px">	
 						</a></div>
-						<p class="mb-4" style="color: white">Kampung Keramik Dinoyo adalah sebuah kampung wisata di Kota Malang, Jawa Timur yang terkenal dengan kerajinan keramiknya.
+						<p class="mb-4" style="color: white; text-align: justify">Kampung Keramik Dinoyo adalah sebuah kampung wisata di Kota Malang, Jawa Timur yang terkenal dengan kerajinan keramiknya.
 							Kampung ini terletak di Kelurahan Dinoyo, Kecamatan Lowokwaru, dan dihuni oleh banyak pengrajin keramik yang terampil.</p>
 
 						<ul class="list-unstyled custom-social">
