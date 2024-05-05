@@ -13,6 +13,7 @@
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
+                    <div class="image-overlay"></div> <!-- Add overlay -->
                     <img src="images/Gelas1.jpg" alt="Avatar" style="width:300px;height:300px;">
                     <h1>Gelas</h1>
                   </div>
@@ -32,6 +33,7 @@
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
+                    <div class="image-overlay"></div> <!-- Add overlay -->
                     <img src="images/Keramik2.png" alt="Avatar" style="width:300px;height:300px;">
                     <h1>Vas</h1>
                   </div>
@@ -51,6 +53,7 @@
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
+                    <div class="image-overlay"></div> <!-- Add overlay -->
                     <img src="images/Piring3.jpg" alt="Avatar" style="width:300px;height:300px;">
                     <h1>Alat Makan</h1>
                   </div>
@@ -73,6 +76,7 @@
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
+                    <div class="image-overlay"></div> <!-- Add overlay -->
                     <img src="images/Decor1.jpg" alt="Avatar" style="width:300px;height:300px;">
                     <h1>Hiasan</h1>
                   </div>
@@ -92,6 +96,7 @@
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
+                    <div class="image-overlay"></div> <!-- Add overlay -->
                     <img src="images/Decor2.jpg" alt="Avatar" style="width:300px;height:300px;">
                     <h1>Custon</h1>
                   </div>
@@ -111,6 +116,7 @@
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
+                    <div class="image-overlay"></div> <!-- Add overlay -->
                     <img src="images/Gelas3.jpg" alt="Avatar" style="width:300px;height:300px;">
                     <h1>Lain-Lain</h1>
                   </div>
