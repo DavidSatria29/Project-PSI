@@ -34,7 +34,7 @@
                                 <td>{{ $payment_confirmation->user_id }}</td>
                                 <td>{{ $payment_confirmation->order_id }}</td>
                                 <td>{{ $payment_confirmation->payment_method }}</td>
-                                <td><img src="{{ asset('assets/img/payment_confirmations/'.$payment_confirmation->image) }}" alt="Payment Confirmation Image" style="max-width: 100px;"></td>
+                                <td><img src="{{ asset('assets/img/payment_confirmations/'.$payment_confirmation->image) }}" alt="Payment Confirmation Image" style="max-width: 250px;"></td>
                                 <td>{{ $payment_confirmation->message }}</td>
                                 <td>{{ $payment_confirmation->status }}</td>
                                 <td><a href="{{ route('admin.payment_confirmation.edit', ['payment_confirmation'=>$payment_confirmation->id]) }}" class="btn btn-success rounded-pill px-3"><i class="bx bx-edit-alt"></i></a></td>

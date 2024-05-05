@@ -9,9 +9,11 @@
     </div>
     <div class="row my-5 ">
       @forelse ($vases as $vase)
-        <div class="col-md-4 mx-2">
-          <div class="card">
-            <img src="{{asset('assets/img/products/'.$vase->image)}}" class="card-img-top" alt="Product Image" width="200px">
+        <div class="col-md-4 mx-2 mb-2">
+          <div class="card mb-2">
+            <div class="text-center">
+              <img src="{{asset('assets/img/products/'.$vase->image)}}" class="card-img-top" alt="Product Image" style="max-width: 200px">
+            </div>
             <div class="card-body">
               <h5 class="card-title">{{ $vase->name }}</h5>
               <div class="row">
@@ -33,6 +35,9 @@
               <div class="row">
                 <div class="col-3"><b>Stok</b></div>
                 <div class="col-9">{{ $vase->stock }}</div>
+              </div>
+              <div class="row">
+                <a href="{{ route('customer.add_to_cart', ['id' =>$vase->id ])}}" class="btn btn-primary">Tambahkan Ke keranjang</a>
               </div>
             </div>
           </div>
